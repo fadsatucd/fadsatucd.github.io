@@ -1,0 +1,36 @@
+@import "/base.css";
+
+#participate .page-heading {
+  background: url('/media/page-banners/participate.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#participate .page-heading .page-title {
+  background: var(--black);
+  color: var(--accent);
+}
+
+.category-block {
+  width: 100vw;
+  padding: 80px var(--tight-margin);
+  text-align: left;
+}
+.category-block .section-heading {
+  color: var(--primary);
+}
+.category-block .title {
+  margin-bottom: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+.category-block .role-info {
+  display: inline-block;
+  padding: 0 60px;
+  border-left: 2px solid var(--primary);
+  margin: 10px 0 80px;
+}
+.category-block .role-info .content {
+  margin-bottom: 30px;
+}

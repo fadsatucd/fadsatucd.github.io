@@ -1,0 +1,105 @@
+@import "/base.css";
+
+#events .page-heading {
+  background: url('/media/page-banners/events.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#events .page-heading .page-title {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.events-block {
+  width: 100vw;
+  padding: 80px var(--tight-margin);
+  text-align: left;
+}
+.events-block.upcoming {
+  padding: 80px var(--tight-margin) 0;
+}
+.events-block .section-heading {
+  color: var(--black);
+}
+.events-block .event {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 2px solid var(--soft);
+  background-color: var(--accent);
+}
+.events-block .event .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  background-color: var(--primary);
+  text-align: center;
+}
+.events-block.past .event .left {
+  background-color: var(--black);
+  opacity: 0.8;
+}
+.events-block .event .left .weekday {
+  line-height: 1em;
+  font-family: 'IBM Plex Sans';
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+}
+.events-block .event .left .day {
+  line-height: 1em;
+  font-family: 'IBM Plex Sans';
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--white);
+}
+.events-block .event .left .month {
+  line-height: 1em;
+  font-family: 'IBM Plex Sans';
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--white);
+}
+.events-block .event .right {
+  flex-grow: 1;
+  width: 200px;
+  padding-left: 40px;
+}
+.events-block .event .right .subheading {
+  margin-bottom: 0;
+  color: var(--black);
+}
+.events-block .event .right .heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+.events-block.past .event .right .heading {
+  color: var(--black);
+  opacity: 0.8;
+}
+.events-block .event .right .content {
+  margin-bottom: 20px;
+}
+.events-block .event .event-links .link {
+  display: inline;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.events-block .event .event-links .link:hover {
+  color: var(--primary-lighter);
+}
+.events-block .event .event-links .divider {
+  display: inline-block;
+  font-size: 20px;
+  margin: -5px 5px 0;
+}
