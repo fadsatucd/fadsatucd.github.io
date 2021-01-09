@@ -119,3 +119,51 @@
   padding: 0 60px;
   margin-bottom: 30px;
 }
+
+.ig-promo-block {
+  width: 100vw;
+  padding: 80px var(--page-margin);
+  text-align: right;
+}
+.ig-promo-block .section-heading {
+  text-align: left;
+}
+.ig-promo-block .photowall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: calc((100vw - 2 * var(--page-margin) - 80px) / 4);
+  margin-bottom: 40px;
+}
+.ig-promo-block .photowall .photo {
+  display: inline-block;
+  width: calc((100vw - 2 * var(--page-margin) - 80px) / 4);
+  height: calc((100vw - 2 * var(--page-margin) - 80px) / 4);
+  background-color: var(--accent);
+  border: 1px solid #ddd;
+  transition: border 0.1s linear;
+  cursor: pointer;
+}
+.ig-promo-block .photowall .photo:hover {
+  border: 1px solid var(--primary);
+}
+.ig-promo-block .photowall .photo1 {
+  background-image: url('/media/ig/1.png');
+  background-size: cover;
+  background-position: center;
+}
+.ig-promo-block .photowall .photo2 {
+  background-image: url('/media/ig/2.png');
+  background-size: cover;
+  background-position: center;
+}
+.ig-promo-block .photowall .photo3 {
+  background-image: url('/media/ig/3.png');
+  background-size: cover;
+  background-position: center;
+}
+.ig-promo-block .photowall .photo4 {
+  background-image: url('/media/ig/4.jpg');
+  background-size: cover;
+  background-position: center;
+}
