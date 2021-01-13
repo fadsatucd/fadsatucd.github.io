@@ -104,6 +104,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: var(--black);
 }
+.content a {
+  font-weight: 500;
+  color: var(--primary);
+}
+.content a:hover {
+  opacity: 0.8;
+}
+.content .space {
+  height: 15px;
+}
 .button {
   display: inline-block;
   height: 60px;

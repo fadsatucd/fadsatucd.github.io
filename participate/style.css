@@ -15,21 +15,33 @@
   padding: 80px var(--tight-margin);
   text-align: left;
 }
+.category-block:nth-of-type(0n+1) {
+  padding-top: 0;
+}
 .category-block .section-heading {
+  margin-bottom: 40px;
   color: var(--primary);
 }
+.category-block .role {
+  margin-bottom: 60px;
+}
 .category-block .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: var(--black);
 }
+.category-block .title span {
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  opacity: 0.4;
+}
 .category-block .role-info {
   display: inline-block;
   padding-left: 60px;
   border-left: 2px solid var(--primary);
-  margin: 10px 0 80px;
 }
 .category-block .role-info .content {
   margin-bottom: 30px;

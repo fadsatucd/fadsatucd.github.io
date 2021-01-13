@@ -95,11 +95,8 @@
 .upcoming-event-block {
   width: 100vw;
   padding: 80px var(--tight-margin);
-  background-image:
-    linear-gradient(black, black),
-    url('/media/upcoming-event-banner.jpg');
+  background-image: url('/media/upcoming-event-banner.jpg');
   background-size: cover;
-  background-blend-mode: saturation;
   background-position: center;
   text-align: left;
 }

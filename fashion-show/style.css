@@ -1,0 +1,25 @@
+@import "/base.css";
+
+.fashion-show-banner {
+  width: 100vw;
+  padding: 80px var(--tight-margin);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url('/media/fashion-show-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+.fashion-show-banner .section-heading {
+  color: var(--white);
+}
+
+.fashion-show-block {
+  width: 100vw;
+  min-height: calc(100vh - 320px);
+  padding: 80px var(--tight-margin);
+  background-color: var(--white);
+  text-align: left;
+}
+.fashion-show-block .content span {
+  font-weight: 700;
+}
