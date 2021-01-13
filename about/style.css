@@ -27,7 +27,7 @@
 }
 .content-block .answer-block {
   display: inline-block;
-  padding: 0 60px;
+  padding-left: 60px;
   border-left: 2px solid var(--primary);
   margin: 10px 0 80px;
 }

@@ -76,17 +76,19 @@
 .events-block .event .right .heading {
   font-size: 32px;
   margin-bottom: 10px;
+  white-space: normal;
   color: var(--primary);
 }
 .events-block.past .event .right .heading {
   color: var(--black);
   opacity: 0.8;
 }
-.events-block .event .right .content {
-  margin-bottom: 20px;
+.events-block .event .event-links {
+  margin-top: 20px;
 }
 .events-block .event .event-links .link {
   display: inline;
+  margin-top: 20px;
   text-transform: uppercase;
   font-family: 'IBM Plex Sans';
   font-size: 16px;
@@ -102,4 +104,26 @@
   display: inline-block;
   font-size: 20px;
   margin: -5px 5px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .events-block {
+    padding: 80px var(--page-margin);
+  }
+  .events-block.upcoming {
+    padding: 80px var(--page-margin) 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .events-block .event {
+    flex-direction: column;
+  }
+  .events-block .event .left {
+    margin: 0 auto 40px;
+    padding: 0;
+  }
+  .events-block .event .right {
+    width: auto;
+    padding: 0;
+  }
 }
