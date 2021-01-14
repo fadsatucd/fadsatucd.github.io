@@ -16,15 +16,15 @@
   align-self: flex-start;
   width: calc(100vw - 2 * 60px);
 }
-.home-banner .top-left-corner {
+.home-banner .corner {
   width: 100px;
   height: 100px;
+}
+.home-banner .top-left-corner {
   border-top: 2px solid var(--soft);
   border-left: 2px solid var(--soft);
 }
 .home-banner .top-right-corner {
-  width: 100px;
-  height: 100px;
   border-top: 2px solid var(--soft);
   border-right: 2px solid var(--soft);
 }
@@ -36,14 +36,10 @@
   width: calc(100vw - 2 * 60px);
 }
 .home-banner .bottom-left-corner {
-  width: 100px;
-  height: 100px;
   border-left: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
 }
 .home-banner .bottom-right-corner {
-  width: 100px;
-  height: 100px;
   border-right: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
 }
@@ -87,8 +83,18 @@
 }
 
 @media screen and (max-width: 800px) {
+  .home-banner .corner {
+    width: 75px;
+    height: 75px;
+  }
   .home-banner .inner .banner-text {
     width: 55vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-banner .corner {
+    width: 50px;
+    height: 50px;
   }
 }
 

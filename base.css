@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 800px) {
   .page-heading .page-title {
+    width: 275px;
     font-size: 26px;
   }
   .section-heading {
@@ -164,6 +165,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .content {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-heading .page-title {
+    width: 175px;
+    font-size: 20px;
+    padding: 45px 25px 40px;
   }
 }
 

@@ -113,6 +113,9 @@
   .events-block.upcoming {
     padding: 80px var(--page-margin) 0;
   }
+  .events-block .event .right .heading {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
   .events-block .event {
@@ -125,5 +128,11 @@
   .events-block .event .right {
     width: auto;
     padding: 0;
+  }
+  .events-block .event .right .subheading {
+    font-size: 15px;
+  }
+  .events-block .event .right .heading {
+    font-size: 27px;
   }
 }
