@@ -55,7 +55,6 @@
   flex-direction: row;
 }
 .designer-block .designer .inner .portrait-frame {
-  height: 0;
   margin-right: 40px;
 }
 .designer-block .designer .inner .portrait-frame .portrait {
