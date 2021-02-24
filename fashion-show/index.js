@@ -11,14 +11,14 @@ let designers = {
   },
   'Madison Moriarty': {
     image: 'madison.jpg',
-    desc: `I am a fashion designer based in Santa Barbara, California. I am currently
+    desc: `Madison is a fashion designer based in Santa Barbara, California. She is currently
     pursuing a B.A. at the University of California, Davis, in fashion design.
     <div class='space'></div>
-    My Collection, Sheer Delight, focuses on the women’s sex appeal with elegant details of chiffon and
-    tulle. I often create garments to enhance a woman’s appearance and provoke self-
-    confidence. In addition, my work often enhances the over sexualizing of women as I
-    firmly believe that we as women need to re own our sex appeal in order to stop other
-    people from doing it. My aesthetic is light, simple, and sexy.
+    Her collection, Sheer Delight, focuses on the women’s sex appeal with elegant details of chiffon and
+    tulle. She often creates garments to enhance a woman’s appearance and provoke self-
+    confidence. In addition, her work often enhances the over sexualizing of women as she
+    firmly believe that women need to re own our sex appeal in order to stop other
+    people from doing it. Her aesthetic is light, simple, and sexy.
     <div class='space'></div>
     To learn more about Madison, visit <a href='madisonmoriartydesigns.squarespace.com'>madisonmoriartydesigns.squarespace.com</a>
     or on Instagram at <a href='https://instagram.com/madisonmoriartydesigns'>madisonmoriartydesigns</a>.`
@@ -35,7 +35,7 @@ let designers = {
   },
   'Siuyan Wong': {
     image: 'siuyan.jpg',
-    desc: `My name is Siuyan Wong and I am a senior design major student whose primary focus on fashion and interior design at UC DAVIS. I have been interested in fashion since I was a little kid and first got hooked on sewing in my first year of middle school in Hong Kong. Because of my love for fashion, I took courses in fashion merchandising, but what I loved most was designing clothes and making it a real piece to go to fashion shows.`
+    desc: `Siuyan Wong is a senior design major student whose primary focus on fashion and interior design at UC DAVIS. She has been interested in fashion since she was a little kid and first got hooked on sewing in her first year of middle school in Hong Kong. Because of her love for fashion, she took courses in fashion merchandising, but what she loved most was designing clothes and making it a real piece to go to fashion shows.`
   },
   'Vania Sutandi': {
     image: 'vania.jpg',
