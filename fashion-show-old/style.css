@@ -1,0 +1,109 @@
+@import "/base.css";
+
+.fashion-show-banner {
+  width: 100vw;
+  padding: 80px var(--tight-margin);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url('/media/fashion-show-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+.fashion-show-banner .section-heading {
+  color: var(--white);
+}
+
+.fashion-show-block {
+  width: 100vw;
+  min-height: calc(100vh - 320px);
+  padding: 80px var(--tight-margin);
+  background-color: var(--white);
+  text-align: left;
+}
+.fashion-show-block .content span {
+  font-weight: 700;
+}
+
+.designer-block {
+  width: 100vw;
+  padding: 80px var(--tight-margin);
+  border-top: 2px solid var(--black);
+  background-color: var(--accent);
+  text-align: left;
+}
+.designer-block .section-heading {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.designer-block .designer {
+  min-height: 240px;
+  margin-bottom: 60px;
+}
+.designer-block .designer .name {
+  margin-bottom: 20px;
+  background-color: var(--accent);
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.designer-block .designer .inner {
+  display: flex;
+  flex-direction: row;
+}
+.designer-block .designer .inner .portrait-frame {
+  margin-right: 40px;
+}
+.designer-block .designer .inner .portrait-frame .portrait {
+  width: 200px;
+  height: 240px;
+}
+.designer-block .designer .inner .right {
+  display: flex;
+  flex-direction: column;
+  min-height: 195px;
+}
+.designer-block .designer .inner .right .title {
+  margin-bottom: 10px;
+  font-family: 'Bodoni', serif;
+  font-size: 24px;
+  color: var(--black);
+}
+.designer-block .designer .inner .right .content {
+  flex-grow: 1;
+  padding-bottom: 20px;
+  line-height: 28px;
+}
+.designer-block .designer .inner .right .personal-links {
+  padding-bottom: 10px;
+}
+.designer-block .designer .inner .right .personal-links .link {
+  display: inline;
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+.designer-block .designer .inner .right .personal-links .link a {
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.designer-block .designer .inner .right .personal-links .link a:hover {
+  color: var(--primary-lighter);
+}
+.designer-block .designer .inner .right .personal-links .divider {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+  margin: -5px 5px 0;
+}
+@media screen and (max-width: 800px) {
+  .designer-block .designer .inner .portrait-frame {
+    display: none;
+  }
+}
