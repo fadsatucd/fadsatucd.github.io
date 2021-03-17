@@ -3,14 +3,14 @@
 <html>
 
   <head>
-    <link rel='stylesheet' type='text/css' href='/fashion-show-old/style.css'>
-    <link rel='icon' type='image/png' href='/media/logo-normal.png'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta charset='utf-8'>
-    <meta name='description' content='The 2021 FADS fashion show will be hosted virtually on Twitch. It features designers and works from the capstone fashion design class at UC Davis.'>
+    <link rel='stylesheet' type='text/css' href='/fashion-show/style.css' />
+    <link rel='icon' type='image/png' href='/media/logo-normal.png' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta charset='utf-8' />
+    <meta name='description' content='Join us on Twitch for Uncharted, the 2021 Fashion Show hosted by the Fashion and Design Society at UC Davis!' />
     <script src='https://kit.fontawesome.com/e442f0058d.js' crossorigin='anonymous'></script>
     <title>
-      2021 Fashion Show - Fashion and Design Society - UC Davis
+      UNCHARTED 2021 Fashion Show - Fashion and Design Society - UC Davis
     </title>
   </head>
 
@@ -72,17 +72,42 @@
           participate
         </a>
       </div>
+
     </div>
 
     <div class='fashion-show-banner'>
-      <h1 class='section-heading'>
-        2021 fashion show
-      </h1>
+      <div class='banner-text'>
+        UC Davis 2021 Annual Fashion Show
+      </div>
+      <div class='fashion-show-logo'>
+        <img src='/media/fashion-show/uncharted-logo.png'></img>
+      </div>
     </div>
 
-    <div class='fashion-show-block'>
+    <div class='info-block'>
+      <div class='date'>
+        <div class='left'>APRIL</div>
+        <div class='middle'>15</div>
+        <div class='right'>7 PM</div>
+      </div>
+
+      <div class='event-intro'>
+        A virtual fashion show hosted by the Fashion and Design&nbsp;Society
+      </div>
+
+      <div class='event-links'>
+        <a class='event-link' href='https://www.twitch.tv/fadsatucd'>
+          FADS Twitch
+        </a>
+        <a class='event-link' href='https://tinyurl.com/uncharted2021' target='_blank'>
+          Register
+        </a>
+      </div>
+    </div>
+
+    <div class='content-block'>
       <div class='content'>
-        <span>Uncharted - A Virtual Fashion Show hosted by the Fashion and Design Society</span>
+        <span>Join us for the UC Davis 2021 Fashion Show, UNCHARTED, premiering live on Twitch on THURSDAY APRIL 15TH, 7PM!</span>
         <div class='space'></div>
         FADS is a student-run organization that supports the talented fashion design students of UC Davis. We have taken our annual fashion show online this year to showcase the dynamic collections created by students of DES 179 “Signature Collection” class. Join us to explore the “Uncharted” territories that fashion can reach!
         <div class='space'></div>
@@ -91,12 +116,10 @@
         Each person may submit only one piece.
         After the deadline, our team will contact you if you are selected.
         <div class='space'></div>
-        Deadline: Friday, March 19 -
+        Extended Deadline: Friday, April 2 -
         <a href='https://docs.google.com/forms/d/e/1FAIpQLScA9l1-6iohkrVb0tH8n1MkXwI_TS6l078uW9dYMyNLZsqQsA/viewform'>
           single garment submission
         </a>
-        <br /><br />
-        In the meantime, <a href='/participate'>join a committee</a> if you'd like to help&nbsp;out!
       </div>
     </div>
 
@@ -105,6 +128,8 @@
       <h2 class='section-heading'>
         designers spotlight
       </h2>
+
+      <div class='designer-grid'></div>
 
     </div>
 
@@ -124,6 +149,20 @@
           <a href='https://forms.gle/uy54uYQGkrUNopNn7'>Student Work Submission</a><br>
           <a href='https://arts.ucdavis.edu/design'>UCD Department of Design</a><br>
           <a href='#'>back to top</a>
+        </div>
+      </div>
+    </div>
+
+    <div class='designer-modal' id='designer-modal'>
+      <div class='modal-backdrop'></div>
+      <div class='modal-content'>
+        <div class='name' id='designer-modal-name'></div>
+        <div class='inner'>
+          <div class='portrait-frame' id='designer-modal-portrait'>
+          </div>
+          <div class='right'>
+            <div class='content' id='designer-modal-content'></div>
+          </div>
         </div>
       </div>
     </div>
