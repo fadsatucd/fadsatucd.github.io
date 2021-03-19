@@ -1,6 +1,9 @@
 'use strict';
 
-'use strict';
+AOS.init({
+  once: true,
+  offset: -200
+});
 
 let designers = {
   'Christina Tan': {
@@ -15,7 +18,6 @@ let designers = {
     image: 'madison.jpg',
     desc: `Madison is a fashion designer based in Santa Barbara, California. She is currently
     pursuing a B.A. at the University of California, Davis, in fashion&nbsp;design.
-    <div class='space'></div>
     Her collection, Sheer Delight, focuses on the women’s sex appeal with elegant details of chiffon and
     tulle. She often creates garments to enhance a woman’s appearance and provoke self-
     confidence. In addition, her work often enhances the over sexualizing of women as she

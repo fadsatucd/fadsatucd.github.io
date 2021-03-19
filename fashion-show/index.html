@@ -9,6 +9,7 @@
     <meta charset='utf-8' />
     <meta name='description' content='Join us on Twitch for Uncharted, the 2021 Fashion Show hosted by the Fashion and Design Society at UC Davis!' />
     <script src='https://kit.fontawesome.com/e442f0058d.js' crossorigin='anonymous'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
       UNCHARTED 2021 Fashion Show - Fashion and Design Society - UC Davis
     </title>
@@ -75,27 +76,29 @@
 
     </div>
 
-    <div class='fashion-show-banner'>
-      <div class='banner-text'>
-        UC Davis 2021 Annual Fashion Show
-      </div>
-      <div class='fashion-show-logo'>
-        <img src='/media/fashion-show/uncharted-logo.png'></img>
+    <div class='black-wrapper'>
+      <div class='fashion-show-banner' data-aos='fade-in' data-aos-duration='600'>
+        <div class='banner-text' data-aos='fade-in' data-aos-delay='150' data-aos-duration='600'>
+          UC Davis 2021 Annual Fashion Show
+        </div>
+        <div class='fashion-show-logo' data-aos='fade-in' data-aos-delay='300' data-aos-duration='600'>
+          <img src='/media/fashion-show/uncharted-logo.png' alt='UNCHARTED' />
+        </div>
       </div>
     </div>
 
     <div class='info-block'>
-      <div class='date'>
+      <div class='date' data-aos='fade-in' data-aos-delay='450'>
         <div class='left'>APRIL</div>
         <div class='middle'>15</div>
         <div class='right'>7 PM</div>
       </div>
 
-      <div class='event-intro'>
+      <div class='event-intro' data-aos='fade-in' data-aos-delay='600'>
         A virtual fashion show hosted by the Fashion and Design&nbsp;Society
       </div>
 
-      <div class='event-links'>
+      <div class='event-links' data-aos='fade-in' data-aos-delay='600'>
         <a class='event-link' href='https://www.twitch.tv/fadsatucd'>
           FADS Twitch
         </a>
@@ -151,6 +154,7 @@
       </div>
     </div>
 
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
     <script type='text/javascript' src='/base.js'></script>
     <script type='text/javascript' src='/fashion-show/index.js'></script>
   </body>
