@@ -105,6 +105,13 @@
   box-shadow:
     0 0 2px 1px var(--fs-yellow-glow);
 }
+.info-block .short-separator {
+  width: 80px;
+  margin: 0 auto 80px;
+  background-color: var(--fs-teal-glow);
+  box-shadow:
+    0 0 2px 1px var(--fs-teal-glow);
+}
 @media screen and (max-width: 800px) {
   .info-block .date .left, .date .right {
     padding-top: 28px;
@@ -147,7 +154,7 @@
 
 .designer-block {
   width: 100vw;
-  padding: 80px var(--tight-margin);
+  padding: 80px var(--tight-margin) 10px;
   background-color: var(--fs-navy);
   text-align: left;
 }
@@ -173,20 +180,24 @@
   color: var(--fs-teal-glow);
   text-shadow: 0 0 2px var(--fs-teal-glow);
 }
-.designer-block .designer:nth-child(2n + 1) .name {
+.designer-block .designer .name span {
+  color: var(--fs-yellow-glow);
+  text-shadow: 0 0 2px var(--fs-yellow-glow);
+}
+.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .name {
   text-align: right;
 }
 .designer-block .designer .inner {
   display: flex;
   flex-direction: row;
 }
-.designer-block .designer:nth-child(2n + 1) .inner {
+.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .inner {
   flex-direction: row-reverse;
 }
 .designer-block .designer .inner .portrait-frame {
   margin: 8px 40px 0 0;
 }
-.designer-block .designer:nth-child(2n + 1) .inner .portrait-frame {
+.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .inner .portrait-frame {
   margin: 8px 0 0 40px;
 }
 .designer-block .designer .inner .portrait-frame .portrait {
@@ -194,7 +205,7 @@
   height: 240px;
   box-shadow: 0 0 2px 0 var(--fs-teal-glow);
 }
-.designer-block .designer .inner .right {
+.designer-block:not(.single-garments) .designer .inner .right {
   display: flex;
   flex-direction: column;
   min-height: 195px;
@@ -203,18 +214,51 @@
   flex-grow: 1;
   padding-bottom: 20px;
   line-height: 28px;
+  min-width: 400px;
   color: var(--fs-teal);
 }
 .designer-block .designer .inner .right .content a {
   color: var(--fs-teal-glow);
 }
+@media screen and (max-width: 1100px) {
+  .designer-block.single-garments .inner {
+    flex-wrap: wrap;
+    min-height: 0;
+  }
+  .designer-block.single-garments .inner .right .content {
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .designer-block.single-garments .designer .inner .portrait-frame {
+    margin: 8px 30px 0 0;
+  }
+  .designer-block.single-garments .designer .inner .portrait-frame .portrait {
+    width: 160px;
+    height: 200px;
+  }
+}
 @media screen and (max-width: 800px) {
-  .designer-block .designer .inner .portrait-frame {
+  .designer-block.single-garments .designer .inner .portrait-frame {
+    margin: 8px 20px 0 0;
+  }
+  .designer-block:not(.single-garments) .designer .inner .portrait-frame {
     display: none;
   }
-  .designer-block .designer:nth-child(1n) .name {
+  .designer-block:not(.single-garments) .designer:nth-child(1n) .name {
     text-align: center;
   }
+}
+@media screen and (max-width: 600px) {
+  .designer-block.single-garments .designer .inner .portrait-frame .portrait {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+.info-block.bottom {
+  padding-bottom: 60px;
 }
 
 #fashion-show .footer {
