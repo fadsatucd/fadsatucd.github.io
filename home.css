@@ -111,6 +111,7 @@
 }
 .upcoming-event-block .upcoming-event {
   display: inline-block;
+  max-width: calc(100vw - 2 * var(--tight-margin));
   padding: 60px;
   background: var(--white);
   text-align: center;
@@ -123,6 +124,7 @@
 .upcoming-event-block .upcoming-event .heading {
   text-align: center;
   color: var(--black);
+  white-space: normal;
 }
 .upcoming-event-block .upcoming-event .content {
   padding: 0 60px;
