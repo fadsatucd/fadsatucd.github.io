@@ -184,28 +184,17 @@
   color: var(--fs-yellow-glow);
   text-shadow: 0 0 2px var(--fs-yellow-glow);
 }
-.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .name {
+.designer-block .designer:nth-child(2n + 1) .name {
   text-align: right;
 }
 .designer-block .designer .inner {
   display: flex;
   flex-direction: row;
 }
-.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .inner {
+.designer-block .designer:nth-child(2n + 1) .inner {
   flex-direction: row-reverse;
 }
-.designer-block .designer .inner .portrait-frame {
-  margin: 8px 40px 0 0;
-}
-.designer-block:not(.single-garments) .designer:nth-child(2n + 1) .inner .portrait-frame {
-  margin: 8px 0 0 40px;
-}
-.designer-block .designer .inner .portrait-frame .portrait {
-  width: 200px;
-  height: 240px;
-  box-shadow: 0 0 2px 0 var(--fs-teal-glow);
-}
-.designer-block:not(.single-garments) .designer .inner .right {
+.designer-block .designer .inner .right {
   display: flex;
   flex-direction: column;
   min-height: 195px;
@@ -214,11 +203,67 @@
   flex-grow: 1;
   padding-bottom: 20px;
   line-height: 28px;
-  min-width: 400px;
   color: var(--fs-teal);
 }
 .designer-block .designer .inner .right .content a {
   color: var(--fs-teal-glow);
+}
+.designer-block .designer .inner .portrait-group {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 40px 0 0;
+}
+.designer-block .designer:nth-child(2n + 1) .inner .portrait-group {
+  margin: 8px 0 0 40px;
+}
+.designer-block .designer .inner .portrait-group .portrait {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 2px 0 var(--fs-teal-glow);
+}
+@media screen and (max-width: 1200px) {
+  .designer-block .designer:nth-child(1n) .name {
+    text-align: center;
+    font-size: 16px;
+  }
+  .designer-block .designer:nth-child(1n) .inner {
+    flex-direction: column;
+  }
+  .designer-block .designer:nth-child(1n) .inner .portrait-group {
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px 20px 0;
+  }
+  .designer-block .designer .inner .portrait-group .portrait {
+    margin: 0 5px 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .designer-block .designer:nth-child(1n) .inner .portrait-group {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 8px 0;
+  }
+  .designer-block .designer .inner .portrait-group .portrait {
+    width: calc(100vw - 2 * var(--tight-margin));
+    height: calc(0.66 * (100vw - 2 * var(--tight-margin)))
+  }
+}
+
+.designer-block.single-garments .designer .name {
+  text-align: left;
+}
+.designer-block.single-garments .designer .inner {
+  flex-direction: row;
+}
+.designer-block.single-garments .designer .inner .portrait-frame {
+  margin: 8px 40px 0 0;
+}
+.designer-block.single-garments .designer .inner .portrait-frame .portrait {
+  width: 200px;
+  height: 240px;
+  box-shadow: 0 0 2px 0 var(--fs-teal-glow);
 }
 @media screen and (max-width: 1100px) {
   .designer-block.single-garments .inner {
@@ -243,34 +288,12 @@
   .designer-block.single-garments .designer .inner .portrait-frame {
     margin: 8px 20px 0 0;
   }
-  .designer-block:not(.single-garments) .designer .inner .portrait-frame {
-    display: none;
-  }
-  .designer-block:not(.single-garments) .designer:nth-child(1n) .name {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 600px) {
   .designer-block.single-garments .designer .inner .portrait-frame .portrait {
     width: 120px;
     height: 150px;
   }
-}
-
-.designer-block .designer .inner .portrait-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 8px 40px 0 0;
-}
-.designer-block .designer:nth-child(2n + 1) .inner .portrait-group {
-  margin: 8px 0 0 40px;
-}
-.designer-block .designer .inner .portrait-group .portrait {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 2px 0 var(--fs-teal-glow);
 }
 
 .info-block.bottom {
