@@ -81,37 +81,37 @@
   height: 240px;
   outline: 10px solid var(--accent);
 }
-.portrait#ingrid {
+.portrait #ingrid {
   background-image: url('/media/board-portraits/ingrid.jpg');
   background-size: cover;
   background-position: left bottom;
 }
-.portrait#christina {
+.portrait #christina {
   background-image: url('/media/board-portraits/christina.png');
   background-size: cover;
   background-position: center bottom;
 }
-.portrait#olivia {
-  background-image: url('/media/board-portraits/olivia.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.portrait#paola {
-  background-image: url('/media/board-portraits/paola.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.portrait#zeki {
+.portrait #zeki {
   background-image: url('/media/board-portraits/zeki.jpg');
   background-size: cover;
   background-position: center;
 }
-.portrait#vanessa {
-  background-image: url('/media/board-portraits/vanessa.jpg');
+.portrait #julia-ma {
+  background-image: url('/media/board-portraits/julia-ma.jpg');
   background-size: cover;
   background-position: center;
 }
-.portrait#allie {
+.portrait #julia-dang {
+  background-image: url('/media/board-portraits/julia-dang.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.portrait #ginnie {
+  background-image: url('/media/board-portraits/ginnie.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.portrait #allie {
   background-image: url('/media/board-portraits/allie.jpg');
   background-size: cover;
   background-position: center;
