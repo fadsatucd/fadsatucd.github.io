@@ -110,7 +110,7 @@
   color: var(--white);
 }
 .upcoming-event-block .upcoming-event {
-  display: inline-block;
+/*   display: inline-block; */
   max-width: calc(100vw - 2 * var(--tight-margin));
   padding: 60px;
   background: var(--white);
