@@ -1,0 +1,12 @@
+@import "/base.css";
+
+#gallery .page-heading {
+    background: url('/media/page-banners/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery .page-heading .page-title {
+    background: var(--black);
+    color: var(--accent);
+}
