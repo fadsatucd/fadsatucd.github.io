@@ -1,0 +1,33 @@
+@import "/base.css";
+
+#resources .page-heading {
+    background: url('/media/page-banners/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#resources .page-heading .page-title {
+    background: var(--black);
+    color: var(--accent);
+}
+
+.category-block {
+    width: 100vw;
+    padding: 80px var(--tight-margin);
+    text-align: left;
+}
+.category-block:nth-of-type(0n+1) {
+    padding-top: 0;
+}
+.category-block .section-heading {
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+.category-block .content .logistics {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
