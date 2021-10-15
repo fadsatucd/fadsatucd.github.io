@@ -10,3 +10,20 @@
     background: var(--black);
     color: var(--accent);
 }
+
+.content-block {
+    width: 100vw;
+    padding: 80px var(--tight-margin);
+    text-align: left;
+}
+
+.content-block .photos {
+}
+
+.content-block .photos #right {
+    margin-left: 400px;
+}
+
+.content-block .photos img {
+    width: 50%;
+}
