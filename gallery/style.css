@@ -14,16 +14,45 @@
 .content-block {
     width: 100vw;
     padding: 80px var(--tight-margin);
+    background-color: var(--accent);
     text-align: left;
 }
 
-.content-block .photos {
+#framing {
+    min-height: 240px;
+    margin-bottom: 80px;
+    padding: 20px;
+    border: 2px dashed var(--black);
 }
 
-.content-block .photos #right {
-    margin-left: 400px;
+#framing .section-heading {
+    display: inline;
+    position: relative;
+    top: -40px;
+    left: -35px;
+    padding: 10px;
+    background-color: var(--accent);
+    font-family: 'Bodoni', serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: var(--primary);
 }
 
-.content-block .photos img {
-    width: 50%;
+.photos {
+    padding: 10px;
+}
+
+#framing .photos img:nth-child(even) {
+    margin-left: 53%;
+}
+
+#framing .photos img:first-child {
+    margin-top: -30px;
+}
+
+#framing .photos img {
+    width: 45%;
+    margin-top: -50px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 0 var(--primary);
 }
