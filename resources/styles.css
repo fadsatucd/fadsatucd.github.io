@@ -14,7 +14,7 @@
 .category-block {
     width: 100vw;
     padding: 80px var(--tight-margin);
-    text-align: left;
+    text-align: center;
 }
 .category-block:nth-of-type(0n+1) {
     padding-top: 0;

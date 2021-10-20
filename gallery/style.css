@@ -30,7 +30,8 @@
     position: relative;
     top: -40px;
     left: -35px;
-    padding: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
     background-color: var(--accent);
     font-family: 'Bodoni', serif;
     text-transform: uppercase;
@@ -51,8 +52,9 @@
 }
 
 #framing .photos img {
-    width: 45%;
-    margin-top: -50px;
+    min-width: 30%;
+    max-width: 45%;
+    margin-top: -40px;
     border: 2px solid white;
     box-shadow: 10px 10px 0 var(--primary);
 }
