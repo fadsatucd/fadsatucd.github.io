@@ -1,9 +1,9 @@
 @import "/base.css";
 
 #gallery .page-heading {
-    background: url('/media/page-banners/about.jpg');
+    background: url('/media/page-banners/gallery.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 #gallery .page-heading .page-title {
