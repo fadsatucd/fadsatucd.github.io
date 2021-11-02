@@ -96,6 +96,11 @@
   background-size: cover;
   background-position: center;
 }
+.portrait#fiona {
+  background-image: url('../media/board-portraits/fiona.jpeg');
+  background-size: cover;
+  background-position: center;
+}
 .portrait#julia-ma {
   background-image: url('../media/board-portraits/julia-ma.jpg');
   background-size: cover;
