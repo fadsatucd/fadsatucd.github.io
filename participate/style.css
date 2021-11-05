@@ -14,13 +14,14 @@
   width: 100vw;
   padding: 80px var(--tight-margin);
   text-align: center;
+  border-top: 4px solid black;
 }
 .category-block:nth-of-type(0n+1) {
   padding-top: 0;
 }
-.category-block .section-heading {
+/* .category-block .section-heading {
   margin-bottom: 40px;
-  color: var(--primary);
+  color: var(--black);
 }
 .category-block .role {
   margin-bottom: 60px;
@@ -45,4 +46,145 @@
 }
 .category-block .role-info .content {
   margin-bottom: 30px;
+} */
+
+/* for des catalogue */
+
+.catalogue-block {
+  margin: auto;
+  width: 100vw;
+  padding: 50px 100px 50px 80px;
+  text-align: left;
+  background-color: var(--accent);
+  border-top: 5px solid black;
 }
+
+#banner {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo h3 {
+  margin-bottom: -10px;
+}
+
+#logo h3, #content-block section h3 {
+  font-size: 52px;
+}
+
+#logo h4 {
+  font-size: 18px;
+}
+
+#banner h2 {
+  padding: 17px 0 0 250px;
+  font-size: 84px;
+}
+
+#recruiting p, #open p, #about {
+  margin: 10px 0 60px 380px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+}
+
+#content-block {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+#position h3{
+  margin-bottom: 150px;
+  color: var(--primary);
+}
+
+#description {
+  margin-left: 75px;
+  padding-left: 75px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  border-left: 2px solid black;
+}
+
+#description article {
+  margin-bottom: 50px;
+}
+
+#description article p {
+  margin: 10px 0 15px 0;
+  font-size: 20px;
+}
+
+.deadline {
+  font-family: 'Bodoni', sans-serif;
+}
+
+#about {
+  width: 90vw;
+  margin: 0;
+}
+/* section {
+  display: flex;
+  text-align: left;
+}
+
+.position {
+  width: 260px;
+}
+
+#content-block .description  {
+  margin-left: 50px;
+  padding: 10px 0 10px 70px;
+  border-left: 2px solid black;
+}
+
+#content-block section h3 {
+  color: var(--primary);
+}
+ */
+
+/* 
+.catalogue-block .section-heading {
+  margin-bottom: 0;
+  color: var(--black);
+}
+.catalogue-block #des-cat {
+  margin: -15px 0  50px 0;
+  color: var(--primary);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+}
+.catalogue-block #content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalogue-block #about {
+  padding-bottom: 40px;
+}
+.catalogue-block .app {
+  width: 20vw;
+  height: 200px;
+}
+.catalogue-block .app .description {
+  margin-top: -8px;
+  padding-bottom: 20px;
+  background-color: var(--accent);
+  border: 1px solid var(--black);
+}
+.catalogue-block .app h3 {
+  color: var(--primary);
+  font-family: 'Bodoni', sans-serif;
+  font-size: 32px;
+}
+.catalogue-block .app .description p {
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+} */
