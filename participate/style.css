@@ -52,7 +52,6 @@
 
 .catalogue-block {
   margin: auto;
-  width: 100vw;
   padding: 50px 100px 50px 80px;
   text-align: left;
   background-color: var(--accent);
