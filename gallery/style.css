@@ -43,6 +43,16 @@
     padding: 10px;
 }
 
+.photos img {
+/*     max-width: 320px;
+    max-height: 215px; */
+    object-fit: cover;
+}
+
+.upper-crop {
+    /* object-position: 0px -75px; */
+}
+
 #framing .photos img:nth-child(even) {
     margin-left: 53%;
 }
