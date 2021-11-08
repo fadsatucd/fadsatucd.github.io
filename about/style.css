@@ -104,7 +104,7 @@
 .portrait#julia-ma {
   background-image: url('../media/board-portraits/julia-ma.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .portrait#julia-dang {
   background-image: url('../media/board-portraits/julia-dang.jpg');
