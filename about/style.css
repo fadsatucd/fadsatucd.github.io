@@ -10,6 +10,12 @@
   color: var(--black);
 }
 
+#board {
+  width: 30%;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+
 .content-block {
   width: 100vw;
   padding: 80px var(--tight-margin);
