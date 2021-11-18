@@ -103,9 +103,9 @@
   background-position: center;
 }
 .portrait#fiona {
-  background-image: url('../media/board-portraits/fiona.jpeg');
+  background-image: url('../media/board-portraits/fiona.JPG');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .portrait#julia-ma {
   background-image: url('../media/board-portraits/julia-ma.jpg');
