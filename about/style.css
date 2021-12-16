@@ -10,10 +10,24 @@
   color: var(--black);
 }
 
-#board {
-  width: 30%;
-  margin-left: 35vw;
-  margin-top: 5vh;
+#board-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+#board-header h2 {
+  width:500px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  align-self: center;
+}
+
+#board-pic {
+  width: 55%;
+  /* border-radius: 50px; */
 }
 
 .content-block {
