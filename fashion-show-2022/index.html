@@ -3,14 +3,16 @@
 <html>
 
   <head>
-    <link rel='stylesheet' type='text/css' href='/participate/style.css'>
-    <link rel='icon' type='image/png' href='/media/logo-normal.png'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta charset='utf-8'>
-    <meta name='description' content='Get involved with the club by applying for roles or joining fashion show committees!'>
+    <!-- <link rel='stylesheet' type='text/css' href='/fashion-show/style.css' /> -->
+    <link rel='stylesheet' type='text/css' href='./styles.css'>
+    <link rel='icon' type='image/png' href='/media/logo-normal.png' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta charset='utf-8' />
+    <meta name='description' content='Join us in person on April 23rd, 2022 for the 2022 Fashion Show hosted by the Fashion and Design Society at UC Davis!' />
     <script src='https://kit.fontawesome.com/e442f0058d.js' crossorigin='anonymous'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
-      Participate - Fashion and Design Society - UC Davis
+      PRISM 2022 Fashion Show - Fashion and Design Society - UC Davis
     </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HS474BKX0"></script>
@@ -23,7 +25,7 @@
     </script>
   </head>
 
-  <body id='participate'>
+  <body id='fashion-show'>
 
     <div class='navbar'>
 
@@ -93,43 +95,56 @@
           resources
         </a>
       </div>
+
     </div>
 
-    <div class='page-heading'>
-      <h1 class='page-title'>
-        participate
-      </h1>
+    <div class='black-wrapper'>
+      <div id='fashion-show-banner' data-aos='fade-in' data-aos-duration='600'>
+<!--         <div class='banner-text' data-aos='fade-in' data-aos-delay='150' data-aos-duration='600'>
+          UC Davis 2022 Annual Fashion Show
+        </div>
+        <div class='fashion-show-logo' data-aos='fade-in' data-aos-delay='400' data-aos-duration='800'>
+          
+        </div> -->
+
+        <video class="show" id="theme-reveal" poster="../media/fashion-show-2022/poster.png" controls muted playsinline>
+            <source src="../media/fashion-show-2022/theme-reveal.webm" type="webm">
+            <source src="../media/fashion-show-2022/theme-reveal.mp4" type="video/mp4">
+    
+            <p>
+                Your brower doesn't support HTML5 video.
+                Here is a <a href="../media/fashion-show-2022/theme-reveal.mp4">link to the video</a> instead.
+            </p>
+        </video>
+      </div>
     </div>
 
-    <div class='category-block'>
-      <h2 class='section-heading'>Fashion Show - Single Garments</h2>
-      <p class="content">
-        Our annual fashion show is back in person this year! We are accepting submissions of single garments to be modeled live at the fashion show on April 15th. This application is open to ALL students; you do not need to be a design major. Single garments can be assignments from class or your own personal projects.
-      </p>
+    <!-- <section class='content-block'>
+        <p>Join us for the UC Davis 2022 Fashion Show, PRISM, in-person during the 2022 Picnic Day!</p>
+        <p>FADS is a student-run organization that supports the talented fashion design students of UC Davis. We are so excited to be back in person this year with PRISM to showcase collections created by students of DES 179 “Signature Collection” class.</p>
+     </section>
 
-      <a class='button' href="https://forms.gle/nYam3oWHRtduve2m9" target="_blank">Submit a Garment!</a>
+    <section id="fs-info">
+        <h2>Location</h2>
+        <p>CRUESS Courtyard</p>
+        <h2>Showtimes</h2>
+        <p>11AM & 1PM</p>
 
-      <h2 class='section-heading' style="margin-top: 30px;">Fashion Show - Exhibition</h2>
-      <p class="content">
-        Show other textile work, such as process work or non-garments, in our Picnic Day exhibition! Your work will be featured in an area adjacent to the fashion show. This is a great opportunity to get more exposure and showcase your work as a designer. 
-        <br>
-        Deadline for submissions is March 17th!
-      </p>
+        <h2>Tickets will go live on March 28!</h2>
 
-      <a class='button' href="https://forms.gle/ub97nJQxYxRzj5VG7" target="_blank">Submit a Project!</a>
-    </div>
+        <img id="map" src="#">
+    </section>
 
-    <div class='category-block'>
+    <a href="#" class="buttons" id="designer-bios">Meet the Featured Designers</a>
 
-      <h2 class='section-heading'>
-        General Meetings every week!
-      </h2>
+    <section>
 
-      <p class="content">
-        FADS winter general meetings are Thursdays 7:30PM - 8:30PM in person at CRUESS 208 unless specifed.
-      </p> 
-    </div>
+    </section>
 
+    
+    <a href="../fashion-show/index.html" class="buttons">See FADS 2021 Fashion Show</a> -->
+
+    
     <div class='footer'>
       <div class='title'>
         Fashion and Design Society
@@ -150,7 +165,9 @@
       </div>
     </div>
 
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
     <script type='text/javascript' src='/base.js'></script>
+    <script type='text/javascript' src='/fashion-show/index.js'></script>
   </body>
 
 </html>

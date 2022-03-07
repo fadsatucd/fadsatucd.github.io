@@ -1,0 +1,37 @@
+@import "/base.css";
+
+:root {
+    --fs-pink: rgba(226,163,231,1);
+    --fs-blue: rgba(151,217,231,1);
+    --fs-purple: rgba(187,148,232,1);
+    --fs-navy: #152744;
+  }
+
+#fashion-show-banner {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(-70deg, var(--fs-purple) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+    position: relative;
+}
+
+#theme-reveal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+}
+
+#fs2021 {
+    width: fit-content;
+    border: 1px solid var(--fs-navy);
+    padding: 10px 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: var(--fs-navy);
+}
+
+#fs2021:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(-70deg, var(--fs-purple) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+}
