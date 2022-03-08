@@ -5,12 +5,21 @@
     --fs-blue: rgba(151,217,231,1);
     --fs-purple: rgba(187,148,232,1);
     --fs-hotPink: #c31ab2;
+    --fs-bgWhite: rgb(235, 251, 254);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 175px;
+    letter-spacing: 20px;
+    color: white;
 }
 
 h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--fs-hotPink);
 }
 
@@ -27,37 +36,96 @@ p {
 
 #fashion-show-banner {
     width: 100vw;
-    height: 720px;
+    height: 1000px;
     background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-    position: relative;
 }
 
 video {
-    width: 375;
-    height: 210;
+    width: 90%;
+    height: auto;
+    z-index: 2;
 }
 
 #theme-reveal {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    /* margin-right: -50%; */
     transform: translate(-50%, -50%);
 }
 
-.wrapper {
+#hero-section {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 1;
+}
+
+#title h2 {
+    margin-top: 50px;
+    background-color: var(--fs-bgWhite);
+    padding: 10px 20px;
+}
+
+#mannequins {
+    opacity: 50%;
+    width: 850px;
+    height: 650px;
+    background-image: url("../media/fashion-show-2022/mannequins.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%); */
+    /* transform: translate(60%, 0%); */
+}
+
+/* .bar {
+    width: 500px;
+    height: 10px;
+    color: black;
+} */
+
+/* .wrapper {
+    height: 250px;
     padding: 25px;
     background: linear-gradient(20deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+}
+ */
+.info-wrapper {
+    /* position: relative; */
+    margin: 20px 50px 0 50px;
+    height: 250px;
+    background-color: white;
+    opacity: 40%;
+}
+
+#fs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 200px;
+    opacity: 100%;
 }
 
 #content-block {
     margin: 25px 18%;
     text-align: center;
-}
-
-#fs-info {
-    padding: 20px 15px;
-    background-color: white;
 }
 
 #des-spotlights {
@@ -85,13 +153,14 @@ video {
     align-items: center;
 }
 
-#fs2021 a {
+#fs2021 a, #trailer-btn {
+    margin: 50px 0;
     width: fit-content;
     height: fit-content;
     border: 1px solid black;
     padding: 10px 20px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: black;
 }
 
@@ -100,16 +169,42 @@ video {
     background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
 }
 
+#trailer-btn:hover {
+    background-color: var(--fs-bgWhite);
+    color: black;
+}
+
 .breaker {
     height: 10px;
     background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
 }
 
 @media screen and (min-width: 800px) {
+/*     video {
+        width: 775px;
+        height: auto;
+    } */
+
+/*     .wrapper {
+        height: 300px;
+        padding: 25px;
+        background: linear-gradient(20deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+    }
+    
+    .sheen {
+        position: relative;
+        height: 250px;
+        background-color: white;
+        opacity: 30%;
+    } */
+    
     #fs-info {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        bottom: 225px;
+        opacity: 100%;
     }
 
     h2 {
@@ -129,9 +224,22 @@ video {
 }
 
 @media screen and (min-width: 1200px) {
+/*     video {
+        width: 1150px;
+        height: auto;
+    } */
+
     h2 {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 36px;
+    }
+
+    #fs-info {
+        opacity: 100%;
+    }
+
+    #fs2021 {
+        height: 200px;
     }
 }
