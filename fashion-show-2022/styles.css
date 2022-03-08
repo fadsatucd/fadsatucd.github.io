@@ -4,14 +4,37 @@
     --fs-pink: rgba(226,163,231,1);
     --fs-blue: rgba(151,217,231,1);
     --fs-purple: rgba(187,148,232,1);
-    --fs-navy: #152744;
-  }
+    --fs-hotPink: #c31ab2;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--fs-hotPink);
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+}
 
 #fashion-show-banner {
     width: 100vw;
-    height: 90vh;
-    background: linear-gradient(-70deg, var(--fs-purple) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+    height: 720px;
+    background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
     position: relative;
+}
+
+video {
+    width: 375;
+    height: 210;
 }
 
 #theme-reveal {
@@ -22,16 +45,93 @@
     transform: translate(-50%, -50%);
 }
 
+.wrapper {
+    padding: 25px;
+    background: linear-gradient(20deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+}
+
+#content-block {
+    margin: 25px 18%;
+    text-align: center;
+}
+
+#fs-info {
+    padding: 20px 15px;
+    background-color: white;
+}
+
+#des-spotlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    
+    background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+}
+  
+#des-spotlights h2 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 56px;
+}
+
 #fs2021 {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#fs2021 a {
     width: fit-content;
-    border: 1px solid var(--fs-navy);
+    height: fit-content;
+    border: 1px solid black;
     padding: 10px 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
-    color: var(--fs-navy);
+    color: black;
 }
 
-#fs2021:hover {
+#fs2021 a:hover {
     border: 1px solid transparent;
-    background: linear-gradient(-70deg, var(--fs-purple) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+    background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
+}
+
+.breaker {
+    height: 10px;
+    background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+}
+
+@media screen and (min-width: 800px) {
+    #fs-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    
+    p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    #des-spotlights h2 {
+        font-size: 84px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+    }
 }
