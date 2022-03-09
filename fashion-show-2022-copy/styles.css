@@ -29,7 +29,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: var(--fs-mauve);
 }
 
@@ -55,6 +55,7 @@ p {
 }
 
 #fs-title h2 {
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -67,11 +68,11 @@ p {
     align-items: center;
 }
 
-#fashion-show-banner h2 {
+#fs-title h2 {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
-}
+} 
 
 #fashion-show-banner p {
     text-align: center;
@@ -93,10 +94,6 @@ video {
 
 #banner {
      width: 100vw;
-    /*height: 50vh;
-    background: url("../media/fashion-show-2022/mobile-banner.svg");
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 #banner img {
@@ -111,9 +108,11 @@ video {
     background-color: white;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #exhibition {
+    /* min-height: 100vh; */
     margin: 25px 0;
     padding: 30px;
     text-align: right;
@@ -121,8 +120,9 @@ video {
 
 #exhibition h1 {
     margin-bottom: 10px;
+    padding-top: 10px;
     font-size: 60px;
-    text-align: right;
+    text-align: left;
     color: var(--fs-dark);
 }
 
@@ -130,6 +130,7 @@ video {
     margin-bottom: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400; 
+    text-align: left;
     color: black;
 }
 
@@ -137,10 +138,10 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 280px;
+    min-height: 100%;
+    padding: 20px 0;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    
     background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
 }
   
@@ -151,19 +152,22 @@ video {
     font-size: 56px;
 }
 
+#fads {
+    margin: 15% 0;
+    min-height: 100%;
+    text-align: center;
+    padding: 0 55px;
+}
 
 #fs2021 {
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    margin-top: 35px;
     align-items: center;
 }
 
-#fs2021 a, #trailer-btn {
-    margin: 20px 0;
+.fs-button {
     width: fit-content;
-    height: fit-content;
     border: 1px solid black;
+    background: transparent;
     padding: 10px 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
@@ -175,12 +179,16 @@ video {
     background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
 }
 
+#trailer-btn {
+    margin: 30px 0;
+}
+
 #trailer-btn:hover {
     background-color: var(--fs-bgWhite);
     color: var(--fs-dark);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
 
     h1 {
         font-size: 48px;
@@ -203,7 +211,7 @@ video {
     }
 
     #fashion-show-banner {
-        /* height: 820px; */
+        min-height: 0;
     }
 
     #banner {
@@ -219,36 +227,80 @@ video {
     #fs-info {
         margin-bottom: 25px;
         /* padding: 0 15%; */
-        padding: 0;
+        padding: 30px 0 0 0;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
-        height: 200px;
-        align-items: center;
-        vertical-align: center;
+        min-height: 100%;
+    }
+    
+    #main-content {
+        margin: 0;
+        background: url("../media/fashion-show-2022/prism-left.png");
+        background-repeat: no-repeat;
+        background-position: left 400px;
     }
 
-    #showtimes {
+    #exhibition {
+        margin: 0;
+        padding-right: 15%;
+        background: url("../media/fashion-show-2022/ex-right.png");
+        background-repeat: no-repeat;
+        background-position: right 150px;
+        background-size: 450px 900px;
+    }
+
+    #showtimes, #ex-hours {
         display: flex;
+        justify-content: right;
+        gap: 50px;
+    }
+
+    #ex-hours {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #ex-hours p {
+        margin: 15px;
+    }
+
+    #exhibition {
+        margin-left: 5%;
+    }
+
+    #ex-info {
+        margin-right: 5%;
+    }
+
+    #location {
+        margin-right: 100px;
+    }
+    
+    #hours {
+        margin-right: 200px;
     }
 
     #des-spotlights {
-        height: 150px;
+        /* height: 150px; */
     }
     
     #des-spotlights h2 {
         font-size: 72px;
     }
+
+    #fads {
+        margin-left: 40%;
+        margin-top: 25px;
+        margin-bottom: -10px;
+        text-align: left;
+        padding: 55px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
-    h1 {
-        font-size: 56px;
-    }
-    
     h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     p {
@@ -257,6 +309,10 @@ video {
     
     #fs-title {
         margin: 35px 0;
+    }
+
+    #fs-title h1 {
+        font-size: 84px;
     }
 
     #fashion-show-banner {
@@ -269,218 +325,41 @@ video {
         height: 95%;
     } 
 
-    #fs2021 {
-        height: 200px;
-    }
-}
-
-/* :root {
-    --fs-pink: rgba(226,163,231,1);
-    --fs-blue: rgba(151,217,231,1);
-    --fs-purple: rgba(187,148,232,1);
-    --fs-hotPink: #c31ab2;
-    --fs-bgWhite: rgb(235, 251, 254);
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 175px;
-    letter-spacing: 20px;
-    color: white;
-}
-
-h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--fs-hotPink);
-}
-
-h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-p {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
-}
-
-#fashion-show-banner {
-    width: 100vw;
-    height: 1000px;
-    background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-}
-
-video {
-    width: 90%;
-    height: auto;
-    z-index: 2;
-}
-
-#theme-reveal {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#hero-section {
-    width: 100vw;
-    height: 80vh;
-    position: relative;
-}
-
-#title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    z-index: 1;
-}
-
-#title h2 {
-    margin-top: 50px;
-    background-color: var(--fs-bgWhite);
-    padding: 10px 20px;
-}
-
-#mannequins {
-    opacity: 50%;
-    width: 850px;
-    height: 650px;
-    background-image: url("../media/fashion-show-2022/mannequins.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.info-wrapper {
-    margin: 20px 50px 0 50px;
-    height: 250px;
-    background-color: white;
-    opacity: 40%;
-}
-
-#fs-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 200px;
-    opacity: 100%;
-}
-
-#content-block {
-    margin: 25px 18%;
-    text-align: center;
-}
-
-#des-spotlights {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 280px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    
-    background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-}
-  
-#des-spotlights h2 {
-    margin: auto;
-    color: white;
-    text-align: center;
-    font-size: 56px;
-}
-
-#fs2021 {
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-#fs2021 a, #trailer-btn {
-    margin: 50px 0;
-    width: fit-content;
-    height: fit-content;
-    border: 1px solid black;
-    padding: 10px 20px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 18px;
-    color: black;
-}
-
-#fs2021 a:hover {
-    border: 1px solid transparent;
-    background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
-}
-
-#trailer-btn:hover {
-    background-color: var(--fs-bgWhite);
-    color: black;
-}
-
-.breaker {
-    height: 10px;
-    background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-}
-
-@media screen and (min-width: 800px) {
-    
-    #fs-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 225px;
-        opacity: 100%;
+    #main-content {
+        background-position: left 50px;
     }
 
-    h2 {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
-        font-size: 28px;
+    #ex-hours {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #ex-hours p {
+        margin: 20px;
+    }
+
+    #exhibition {
+        background-position: right 0%;
+        background-size: 425px 890px;
+    }
+
+    #exhibition h1 {
+        font-size: 86px;
+    }
+
+    #location {
+        margin-right: 100px;
     }
     
-    p {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 18px;
+    #hours {
+        margin-right: 200px;
     }
 
-    #des-spotlights h2 {
-        font-size: 84px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    video {
-        margin-top: 10px;
-        width: auto;
-        height: 95%;
-    } 
-
-    h2 {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
-        font-size: 36px;
-    }
-
-    #fs-info {
-        opacity: 100%;
+    #fads {
+        margin-left: 30%;
     }
 
     #fs2021 {
-        height: 200px;
+        height: 75px;
     }
-} */
+}
