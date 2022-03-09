@@ -1,124 +1,153 @@
 @import "/base.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
     --fs-pink: rgba(226,163,231,1);
     --fs-blue: rgba(151,217,231,1);
     --fs-purple: rgba(187,148,232,1);
     --fs-hotPink: #c31ab2;
-    --fs-bgWhite: rgb(235, 251, 254);
+    --fs-mauve: #7E4D5E;
+    --fs-dustyGrey: #72698E;
+    --fs-dark: #373737;
 }
 
+/* element css */
+
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 175px;
-    letter-spacing: 20px;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: var(--fs-mauve);
+    text-align: center;
 }
 
 h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    font-size: 20px;
-    color: var(--fs-hotPink);
+    color: var(--fs-mauve);
 }
 
 h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: var(--fs-mauve);
 }
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--fs-dustyGrey);
+}
+
+.r-ibm {
+    font-style: normal;
+}
+
+/* ------------ */
+
+#fs-title {
+    margin: 15px 0;
+}
+
+#fs-title h1 {
+    color: var(--fs-dark);
+}
+
+#fs-title h2 {
+    font-size: 20px;
+    font-style: italic;
 }
 
 #fashion-show-banner {
     width: 100vw;
-    height: 1000px;
+    min-height: 100vh;
     background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-video {
-    width: 90%;
-    height: auto;
+#fs-title h2 {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+} 
+
+#fashion-show-banner p {
+    text-align: center;
+}
+
+/* #video-overlay {
+    position: absolute;
+    width: 100vw;
+    min-height: 100%;
+    display: block;
+    background-color: white;
     z-index: 2;
 }
 
+video {
+    width: 80%;
+   
+}
+
 #theme-reveal {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#hero-section {
-    width: 100vw;
-    height: 80vh;
     position: relative;
-}
-
-#title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
-    z-index: 1;
+    transform: translate(-50%, 0%);
+} */
+
+#banner {
+     width: 100vw;
 }
 
-#title h2 {
-    margin-top: 50px;
-    background-color: var(--fs-bgWhite);
-    padding: 10px 20px;
-}
-
-#mannequins {
-    opacity: 50%;
-    width: 850px;
-    height: 650px;
-    background-image: url("../media/fashion-show-2022/mannequins.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.info-wrapper {
-    /* position: relative; */
-    margin: 20px 50px 0 50px;
-    height: 250px;
-    background-color: white;
-    opacity: 40%;
+#banner img {
+    width: 100%;
 }
 
 #fs-info {
+    width: 90%;
+    min-height: 100%;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 200px;
-    opacity: 100%;
+    text-align: center;
 }
 
-#content-block {
-    margin: 25px 18%;
-    text-align: center;
+#exhibition {
+    margin: 25px 0;
+    padding: 30px;
+    text-align: right;
+}
+
+#exhibition h1 {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 60px;
+    text-align: left;
+    color: var(--fs-dark);
+}
+
+#exhibition h3 {
+    margin-bottom: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400; 
+    text-align: left;
+    color: black;
 }
 
 #des-spotlights {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 280px;
+    min-height: 100%;
+    padding: 20px 0;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    
     background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
 }
   
@@ -129,22 +158,26 @@ video {
     font-size: 56px;
 }
 
+#fads {
+    margin: 15% 0;
+    min-height: 100%;
+    text-align: center;
+    padding: 0 55px;
+}
+
 #fs2021 {
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    margin-top: 35px;
     align-items: center;
 }
 
-#fs2021 a, #trailer-btn {
-    margin: 50px 0;
+.fs-button {
     width: fit-content;
-    height: fit-content;
     border: 1px solid black;
+    background: transparent;
     padding: 10px 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
-    color: black;
+    color: var(--fs-dark);
 }
 
 #fs2021 a:hover {
@@ -152,62 +185,172 @@ video {
     background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
 }
 
-#trailer-btn:hover {
-    background-color: var(--fs-bgWhite);
-    color: black;
+#trailer-btn {
+    margin: 30px 0;
 }
 
-.breaker {
-    height: 10px;
-    background: linear-gradient(70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
+#trailer-btn:hover {
+    background-color: var(--fs-bgWhite);
+    color: var(--fs-dark);
 }
 
 @media screen and (min-width: 800px) {
-    
-    #fs-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 225px;
-        opacity: 100%;
-    }
 
+    h1 {
+        font-size: 48px;
+    }
+    
     h2 {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
         font-size: 28px;
     }
     
+    h3 {
+        font-size: 24px;
+    }
+    
     p {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 18px;
+        font-size: 22px;
     }
 
+    #fs-title {
+        margin: 25px 0;
+    }
+
+    #fashion-show-banner {
+        min-height: 0;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner img {
+        width: 80%;
+        content: url("../media/fashion-show-2022/web-banner.svg");
+    }
+
+    #fs-info {
+        margin: 25px 0;
+        padding: 30px 0 0 0;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        min-height: 100%;
+    }
+    
+    #main-content {
+        margin: 0;
+        background: url("../media/fashion-show-2022/prism-left.png");
+        background-repeat: no-repeat;
+        background-position: left 400px;
+    }
+
+    #exhibition {
+        margin: 0;
+        padding-right: 15%;
+        background: url("../media/fashion-show-2022/ex-right.png");
+        background-repeat: no-repeat;
+        background-position: right 150px;
+        background-size: 450px 900px;
+    }
+
+    #showtimes, #ex-hours {
+        display: flex;
+        justify-content: right;
+        gap: 50px;
+    }
+
+    #ex-hours {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #ex-hours p {
+        margin: 15px;
+    }
+
+    #exhibition {
+        margin-left: 5%;
+    }
+
+    #ex-info {
+        margin-right: 5%;
+    }
+
+    #location {
+        margin-right: 100px;
+    }
+    
+    #hours {
+        margin-right: 200px;
+    }
+    
     #des-spotlights h2 {
-        font-size: 84px;
+        font-size: 72px;
+    }
+
+    #fads {
+        margin-left: 40%;
+        margin-top: 25px;
+        margin-bottom: -10px;
+        text-align: left;
+        padding: 55px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-
-    video {
-        margin-top: 10px;
-        width: auto;
-        height: 95%;
-    } 
-
     h2 {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
-        font-size: 36px;
+        font-size: 40px;
     }
 
-    #fs-info {
-        opacity: 100%;
+    p {
+        font-size: 24px;
+    }
+    
+    #fs-title {
+        margin: 35px 0;
+    }
+
+    #fs-title h1 {
+        font-size: 84px;
+    }
+
+    #main-content {
+        background-position: left 50px;
+    }
+
+    #ex-hours {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #ex-hours p {
+        margin: 20px;
+    }
+
+    #exhibition {
+        background-position: right 0%;
+        background-size: 425px 890px;
+    }
+
+    #exhibition h1 {
+        font-size: 86px;
+    }
+
+    #location {
+        margin-right: 100px;
+    }
+    
+    #hours {
+        margin-right: 200px;
+    }
+
+    #fads {
+        margin-left: 30%;
     }
 
     #fs2021 {
-        height: 200px;
+        height: 75px;
     }
 }
