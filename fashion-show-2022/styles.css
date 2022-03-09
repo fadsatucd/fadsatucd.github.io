@@ -87,25 +87,8 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%); */
-    /* transform: translate(60%, 0%); */
 }
 
-/* .bar {
-    width: 500px;
-    height: 10px;
-    color: black;
-} */
-
-/* .wrapper {
-    height: 250px;
-    padding: 25px;
-    background: linear-gradient(20deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-}
- */
 .info-wrapper {
     /* position: relative; */
     margin: 20px 50px 0 50px;
@@ -180,23 +163,6 @@ video {
 }
 
 @media screen and (min-width: 800px) {
-/*     video {
-        width: 775px;
-        height: auto;
-    } */
-
-/*     .wrapper {
-        height: 300px;
-        padding: 25px;
-        background: linear-gradient(20deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
-    }
-    
-    .sheen {
-        position: relative;
-        height: 250px;
-        background-color: white;
-        opacity: 30%;
-    } */
     
     #fs-info {
         display: flex;
@@ -224,10 +190,12 @@ video {
 }
 
 @media screen and (min-width: 1200px) {
-/*     video {
-        width: 1150px;
-        height: auto;
-    } */
+
+    video {
+        margin-top: 10px;
+        width: auto;
+        height: 95%;
+    } 
 
     h2 {
         font-family: 'IBM Plex Sans', sans-serif;
