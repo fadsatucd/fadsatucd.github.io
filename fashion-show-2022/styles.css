@@ -107,6 +107,13 @@ video {
     width: 100%;
 }
 
+#fs-prices {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #fs-info {
     width: 90%;
     min-height: 100%;
@@ -230,6 +237,12 @@ video {
         content: url("../media/fashion-show-2022/web-banner.svg");
     }
 
+    #fs-prices {
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+
     #fs-info {
         margin: 25px 0;
         padding: 30px 0 0 0;
@@ -314,6 +327,10 @@ video {
 
     #fs-title h1 {
         font-size: 84px;
+    }
+
+    #fs-prices {
+        gap: 250px;
     }
 
     #main-content {
