@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
-    --fs-pink: rgba(226,163,231,1);
-    --fs-blue: rgba(151,217,231,1);
-    --fs-purple: rgba(187,148,232,1);
+    --fs-pink: rgba(226,163,231,.7);
+    --fs-blue: rgba(151,217,231,.7);
+    --fs-purple: rgba(187,148,232,.7);
     --fs-hotPink: #c31ab2;
     --fs-mauve: #7E4D5E;
     --fs-dustyGrey: #72698E;
@@ -108,14 +108,15 @@ video {
 }
 
 #fs-prices {
-    margin: 25px 0;
+    margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #fs-prices h2 {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 24px;
     color: var(--fs-dustyGrey);
 }
 
@@ -233,28 +234,26 @@ video {
     /* background-color: #eee; */
     /* color: #444; */
     cursor: pointer;
-    padding: 30px 20px;
+    padding: 25px 20px;
     width: 70%;
     border: none;
     outline: none;
-    transition: 0.4s;
+    /* transition: 0.4s; */
     margin: auto;
 }
 .faq-body{
     margin: auto;
-    /* text-align: center; */
-   width: 60%; 
-   padding: auto;  
+    width: 70%; 
+    padding: auto;  
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
 .faq-page:hover {
-    background-color: #F9F9F9;
+    background-color: var(--fs-blue);
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
-    padding: 0 18px;
+    padding: 0 10px;
     background-color: white;
     display: none;
     overflow: hidden;
@@ -262,10 +261,11 @@ video {
 .faq-page:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 16px;
     color: #777;
     float: right;
-    margin-left: 5px;
+    padding: 0 10px;
+    /* margin-left: 5px; */
 }
 .active:after {
     content: "\2796";
@@ -316,6 +316,16 @@ video {
         gap: 5%;
     }
  */
+
+    #fs-prices {
+        margin: 30px 0 15px 0;
+    }
+
+    #fs-prices h2 {
+        font-weight: 500;
+        font-size: 32px;
+    }
+
     #fs-info {
         margin: 25px 0;
         padding: 30px 0 15px 0;
