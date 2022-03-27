@@ -114,6 +114,11 @@ video {
     align-items: center;
 }
 
+#fs-prices h2 {
+    font-weight: 400;
+    color: var(--fs-dustyGrey);
+}
+
 #fs-info {
     width: 90%;
     min-height: 100%;
@@ -123,6 +128,10 @@ video {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+#fs-info p {
+    margin-top: 10px;
 }
 
 #exhibition {
@@ -200,6 +209,70 @@ video {
     background-color: var(--fs-bgWhite);
     color: var(--fs-dark);
 }
+
+/* FAQ section */
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line{
+  width: 70%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    /* color: #444; */
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 60%; 
+   padding: auto;  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/* --------------- */
 
 @media screen and (min-width: 800px) {
 
@@ -329,10 +402,18 @@ video {
         font-size: 84px;
     }
 
+    #fs-title h2 {
+        font-size: 36px;
+    }
+
     #fs-prices {
         flex-direction: row;
         justify-content: center;
         gap: 8%;
+    }
+
+    #fs-info p {
+        margin-top: 15px;
     }
 
     #main-content {
