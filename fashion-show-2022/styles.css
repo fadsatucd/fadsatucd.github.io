@@ -35,7 +35,7 @@ h3 {
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     color: var(--fs-dustyGrey);
 }
@@ -60,7 +60,7 @@ p {
 }
 
 #fashion-show-banner {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 54%, var(--fs-purple) 100%);
     display: flex;
@@ -107,7 +107,7 @@ video {
     width: 100%;
 }
 
-#fs-prices {
+/* #fs-prices {
     margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
@@ -118,14 +118,13 @@ video {
     font-weight: 500;
     font-size: 24px;
     color: var(--fs-dustyGrey);
-}
+} */
 
 #fs-info {
     width: 90%;
     min-height: 100%;
-    margin-bottom: 30px;
     padding: 25px 0;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -133,6 +132,53 @@ video {
 
 #fs-info p {
     margin-top: 10px;
+}
+
+#tickets {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 25px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 30px;
+}
+
+#tickets-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#tickets-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#tickets-button {
+    margin-top: 35px;
+}
+
+#tickets h1 {
+    color: var(--fs-dark);
+    text-align: center;
+}
+
+#tickets p {
+    margin: -3px 0;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#tickets a {
+    width: 275px;
+    text-align: center;
 }
 
 #exhibition {
@@ -197,7 +243,7 @@ video {
     color: var(--fs-dark);
 }
 
-#fs2021 a:hover {
+.fs-button:hover {
     border: 1px solid transparent;
     background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
 }
@@ -310,13 +356,6 @@ video {
         content: url("../media/fashion-show-2022/web-banner.svg");
     }
 
-/*     #fs-prices {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5%;
-    }
- */
-
     #fs-prices {
         margin: 30px 0 15px 0;
     }
@@ -334,7 +373,26 @@ video {
         width: 100%;
         min-height: 100%;
     }
-    
+
+    #tickets {
+        flex-direction: column;
+    }
+
+    #tickets-content {
+        flex-direction: row;
+        padding: 0 75px;
+    }
+
+    #tickets-content div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #tickets h1 {
+        padding-left: 75px;
+        text-align: left;
+    }
+
     #main-content {
         margin: 0;
         background: url("../media/fashion-show-2022/prism-left.png");
@@ -424,6 +482,14 @@ video {
 
     #fs-info p {
         margin-top: 15px;
+    }
+
+    #tickets-content {
+        padding: 0 150px;
+    }
+
+    #tickets h1 {
+        padding-left: 150px;
     }
 
     #main-content {
