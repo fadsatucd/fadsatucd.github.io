@@ -264,14 +264,11 @@ video {
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-    /* background-color: #eee; */
-    /* color: #444; */
     cursor: pointer;
     padding: 25px 20px;
     width: 70%;
     border: none;
     outline: none;
-    /* transition: 0.4s; */
     margin: auto;
 }
 .faq-body{
