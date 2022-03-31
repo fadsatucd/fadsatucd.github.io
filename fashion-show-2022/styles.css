@@ -107,19 +107,6 @@ video {
     width: 100%;
 }
 
-/* #fs-prices {
-    margin: 20px 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#fs-prices h2 {
-    font-weight: 500;
-    font-size: 24px;
-    color: var(--fs-dustyGrey);
-} */
-
 #fs-info {
     width: 90%;
     min-height: 100%;
