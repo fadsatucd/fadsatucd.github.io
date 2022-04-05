@@ -10,7 +10,7 @@
     }
     
     function outputHTML(data){
-        let html = '<h1 style="font-size: 72px;">Signature Collection Designers</h1>';
+        let html = '<h1>Signature Collection Designers</h1>';
         data.forEach( function(eachDes){
             html += `<article class="designer">
             <div class="designer-header">
