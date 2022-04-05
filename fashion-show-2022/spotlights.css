@@ -1,0 +1,162 @@
+@import "/base.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --fs-pink: rgba(226,163,231,.7);
+    --fs-blue: rgba(151,217,231,.7);
+    --fs-purple: rgba(187,148,232,.7);
+    --fs-hotPink: #c31ab2;
+    --fs-mauve: #7E4D5E;
+    --fs-dustyGrey: #72698E;
+    --fs-dark: #373737;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px; /* 96? on larger screens */
+    color: var(--fs-mauve);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--fs-mauve);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: var(--fs-mauve);
+}
+
+p {
+    margin: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: var(--fs-dustyGrey);
+}
+
+header {
+    height: fit-content;
+    padding: 200px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    margin-bottom: 15px;
+    height: fit-content;
+    padding: 16px 25px;
+    width: fit-content;
+    border: 1px solid black;
+    background: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    color: var(--fs-dark);
+}
+
+.button:hover {
+    background-color: var(--fs-pink);
+}
+
+#collections {
+    padding: 50px;
+    background-color: rgb(250, 250, 250);
+}
+
+#collections, #single-garments {
+    
+}
+
+.designer {
+    margin: auto;
+    width: 98%;
+    /* margin: 35px 0; */
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 5px solid var(--fs-hotPink); */
+    justify-content: center;
+}
+
+.designer-header {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    padding: 25px 30px;
+    background-image: url("/media/fashion-show-2022/designers/banner.jpg");
+}
+
+.designer-headshot {
+    width: 135px;
+    border: 5px solid white;
+}
+
+.collection-name {
+    color: var(--fs-dark);
+}
+
+.designer-name {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--fs-dustyGrey);
+}
+
+.about-collection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.moodboard {
+    width: 100%;
+    height: max-content;
+}
+
+@media screen and (min-width: 800px) {
+    p {
+        font-size: 18px;
+    }
+
+    .button {
+        height: 60px;
+        padding: 22px 40px;;
+        font-size: 18px;
+    }
+
+    .designer {
+        width: 80%;
+    }
+
+    .designer div {
+        flex-direction: row;
+    }
+
+    .collection-name {
+        font-size: 48px;
+    }
+    
+    .designer-name {
+    
+    }
+    .moodboard {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .designer {
+        width: 75%;
+    }
+
+    .about-collection {
+        flex-direction: row;
+    }
+}
