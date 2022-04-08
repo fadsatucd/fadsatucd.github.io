@@ -1,15 +1,23 @@
 (function(){
     'use strict';
 
-    async function getData(){
+    async function getCollections(){
         const designers = await fetch('collections.json');
         const data = await designers.json();
         const values = Object.values(data);
         console.log(values);
-        document.querySelector('#collections').innerHTML = outputHTML(values);
+        document.querySelector('#collections').innerHTML = outputCollections(values);
+    }
+
+    async function getGarments(){
+        const designers = await fetch('single-garment.json');
+        const data = await designers.json();
+        const values = Object.values(data);
+        console.log(values);
+        document.querySelector('#single-garments').innerHTML = outputGarments(values);
     }
     
-    function outputHTML(data){
+    function outputCollections(data){
         let html = '<h1>Signature Collection Designers</h1>';
         data.forEach( function(eachDes){
             html += `<article class="designer">
@@ -32,7 +40,17 @@
         } );
         return html;
     } 
+
+    function outputGarments(data) {
+        let html = '<h1>Single Garment Designers</h1><ul>';
+        data.forEach( function(eachDes){
+            html += `<li><h2><span class="piece-name">${eachDes.piece}</span><br><span class="designer-name">${eachDes.name}</span></h2></li>`;
+        });
+        html += "</ul>";
+        return html;
+    }
     
-    getData();
+    getCollections();
+    getGarments();
 
 })(); // end IIFE
