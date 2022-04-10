@@ -1,5 +1,16 @@
 @import "/base.css";
 
+.page-heading {
+    background: url('/media/page-banners/events.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.page-heading .page-title {
+    background: var(--primary);
+    color: var(--white);
+}
+
 body {
     background-color: var(--accent);
 }
@@ -23,7 +34,7 @@ h1 {
 }
 
 #front {
-    min-width: 175px;
+    min-width: 200px;
     max-width: 37%;
     height: fit-content;
 }
