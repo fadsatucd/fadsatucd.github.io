@@ -194,14 +194,18 @@ video {
     width: 100%;
     text-align: center;
     min-height: 100%;
-    padding: 20px 0;
+    padding: 30px 0;
     font-weight: 600;
     font-family: 'IBM Plex Sans', sans-serif;
     background: linear-gradient(70deg,rgba(226,163,231), rgba(151,217,231), rgba(187,148,232));
 }
 
-#des-spotlights:hover {
-    animation: flow 10s ease infinite;
+#des-spotlights a:hover {
+    cursor: pointer;
+    padding: 10px 40px;
+    border: 2px solid transparent;
+    background-color: white;
+    color: var(--fs-mauve)
 }
 
 @keyframes flow {
