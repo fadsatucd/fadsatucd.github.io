@@ -132,7 +132,7 @@ video {
     gap: 30px;
 }
 
-#tickets-content {
+#tickets div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,12 +140,12 @@ video {
     gap: 30px;
 }
 
-#tickets-content div {
+/* #tickets-content div {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-}
+} */
 
 #tickets-button {
     margin-top: 35px;
@@ -164,7 +164,7 @@ video {
 }
 
 #tickets a {
-    width: 275px;
+    width: fit-content;
     text-align: center;
 }
 
@@ -194,18 +194,10 @@ video {
     width: 100%;
     text-align: center;
     min-height: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
     font-weight: 600;
     font-family: 'IBM Plex Sans', sans-serif;
     background: linear-gradient(70deg,rgba(226,163,231), rgba(151,217,231), rgba(187,148,232));
-}
-
-#des-spotlights a:hover {
-    cursor: pointer;
-    padding: 10px 40px;
-    border: 2px solid transparent;
-    background-color: white;
-    color: var(--fs-mauve)
 }
 
 @keyframes flow {
@@ -382,9 +374,10 @@ video {
         justify-content: center;
     }
 
-    #tickets-content {
+    #tickets div {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
     #tickets h1 {
