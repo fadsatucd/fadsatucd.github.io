@@ -34,7 +34,7 @@
             </div>
 
             <p>
-               ${eachDes.bio} 
+               ${eachDes.bio} <a href="mailto:${eachDes.contact}">Contact ${eachDes.name}</a>
             </p>
         </article>`;
         } );
