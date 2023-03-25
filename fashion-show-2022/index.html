@@ -3,16 +3,17 @@
 <html>
 
   <head>
-    <link rel='stylesheet' type='text/css' href='/fashion-show-2022/styles.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='/fashion-show/style.css' /> -->
+    <link rel='stylesheet' type='text/css' href='/fashion-show-2022-copy/styles.css'>
     <link rel='icon' type='image/png' href='/media/logo-normal.png' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta charset='utf-8' />
-    <meta name='description' content='Join us in person on April 23rd, 2022 for the 2022 Fashion Show hosted by the Fashion and Design Society at UC Davis!' />
+    <meta name='description' content='Join us in person on April 15th, 2023 for the 2023 Fashion Show hosted by the Fashion and Design Society at UC Davis!' />
     <script src="/fashion-show-2022/script.js" defer></script>
     <script src='https://kit.fontawesome.com/e442f0058d.js' crossorigin='anonymous'></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
-      PRISM 2022 Fashion Show - Fashion and Design Society - UC Davis
+      Intertwined 2023 Fashion Show - Fashion and Design Society - UC Davis
     </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HS474BKX0"></script>
@@ -25,18 +26,6 @@
     </script>
   </head>
 
-<!--   <div id="video-overlay">
-    <video id="theme-reveal" poster="../media/fashion-show-2022/poster.png" controls muted playsinline>
-      <source src="../media/fashion-show-2022/theme-reveal.webm" type="webm">
-      <source src="../media/fashion-show-2022/theme-reveal.mp4" type="video/mp4">
-
-      <p>
-          Your brower doesn't support HTML5 video.
-          Here is a <a href="../media/fashion-show-2022/theme-reveal.mp4">link to the video</a> instead.
-      </p>
-    </video>
-  </div> -->
-
   <body id='fashion-show'>
 
     <div class='navbar'>
@@ -46,17 +35,14 @@
       </a>
 
       <div class='navigation'>
-        <a href='/fashion-show-2022' class='nav-button'>
-          2022 fashion show
-        </a>
-        <a href='/catalog' class='nav-button'>
-          design catalog 
-        </a>
         <a href='/events' class='nav-button'>
           events
         </a>
         <a class='nav-button' href='/participate'>
           participate
+        </a>
+        <a href='/fashion-show-2022' class='nav-button'>
+          2022 fashion show
         </a>
         <a href='/about' class='nav-button'>
           about fads
@@ -64,9 +50,9 @@
         <a href='/gallery' class='nav-button'>
           gallery
         </a>
-        <!-- <a href='/resources' class='nav-button'>
+        <a href='/resources' class='nav-button'>
           resources
-        </a> -->
+        </a>
       </div>
 
       <div class='social-media'>
@@ -91,17 +77,14 @@
         <i class='fas fa-times'></i>
       </div>
       <div class='mobile-nav-buttons'>
-        <a class='mobile-nav-button' href='/fashion-show-2022'>
-          2022 fashion show
-        </a>
-        <a href='/catalog' class='mobile-nav-button'>
-          design catalog 
-        </a>
         <a class='mobile-nav-button' href='/events'>
           events
         </a>
         <a class='mobile-nav-button' href='/participate'>
           participate
+        </a>
+        <a class='mobile-nav-button' href='/fashion-show-2022'>
+          2023 fashion show
         </a>
         <a class='mobile-nav-button' href='/about'>
           about fads
@@ -109,9 +92,9 @@
         <a class='mobile-nav-button' href='/gallery' >
           gallery
         </a>
-        <!-- <a class='mobile-nav-button' href='/resources'>
+        <a class='mobile-nav-button' href='/resources'>
           resources
-        </a> -->
+        </a>
       </div>
 
     </div>
@@ -119,39 +102,49 @@
     <div id="fashion-show-banner" data-aos='fade-in' data-aos-duration='600'>
 
       <div id="fs-title">
-        <h1>2022 Picnic Day Fashion Show</h1>
+        <h1>2023 Picnic Day Fashion Show</h1>
         <h2>Presented by Fashion and Design Society</h2>
       </div>
 
-      <div>
+      <div id="hero-section">
+
+        <!-- <video id="theme-reveal" poster="../media/fashion-show-2022/poster.png" controls muted playsinline>
+          <source src="../media/fashion-show-2022/theme-reveal.webm" type="webm">
+          <source src="../media/fashion-show-2022/theme-reveal.mp4" type="video/mp4">
+  
+          <p>
+              Your brower doesn't support HTML5 video.
+              Here is a <a href="../media/fashion-show-2022/theme-reveal.mp4">link to the video</a> instead.
+          </p>
+        </video> -->
 
         <div id="banner"><img src="../media/fashion-show-2022/mobile-banner.svg"></div>
+
+        <!-- <section id="title">
+          <h1>PRISM</h1>
+          <div id="trailer-btn">watch trailer</div>
+          <h2>Tickets will go live, HERE, on March 14, 2022</h2>
+        </section>
+        <div id="mannequins"></section>-->
       </div>
+
+      <button class="fs-button" id="trailer-btn">watch theme reveal</button>
 
       <section id="fs-info">
         <div>
           <h2>Date</h2>
-          <p>April 23, 2022</p>
+          <p>April 15, 2023</p>
         </div>
         <div>
           <h2>Showtimes</h2>
           <div id="showtimes">
-            <p>Morning Show <br>at 11:00AM</p>
-            <p>Afternoon Show<br> at 1:00PM</p>
+            <p><span class="r-ibm">Morning</span><br>11:00AM</p>
+            <p><span class="r-ibm">Afternoon</span><br>1:00PM</p>
           </div>
         </div>
         <div>
           <h2>Location</h2>
-          <p>Cruess Hall<br>Maker Space Courtyard</p>
-        </div>
-      </section>
-
-      <section id="tickets">
-        <h1>Thank you for a great 2022 Picnic Day Fashion Show!</h1>
-        <div>
-          <a class="fs-button" href="https://video.ucdavis.edu/media/Picnic+Day+Fashion+Show+2022/1_ab37if71">Watch Prism</a>
-          <a class="fs-button" href="https://docs.google.com/document/d/1GIRf9FewEaR32V57pHfBETEc9q5g3bOqZ8yqjlKoDx4/edit">Check Out the Fashion Show Photos</a>
-          <a class="fs-button" href="./spotlights.html">Meet the Designers Featured of the Show</a>
+          <p>CRUESS Courtyard</p>
         </div>
       </section>
 
@@ -159,41 +152,42 @@
 
     <div id="main-content">
       <section id="exhibition">
-        <h1>2022 Design Exhibition</h1>
+        <h1>2023 Design Exhibition</h1>
         <h3>A collection of work and process documents of UC Davis Design Students</h3>
   
         <div id="ex-content">
           <div id="ex-info">
             <div id="date">
               <h2>Date</h2>
-              <p>April 23, 2022</p>
+              <p>April 15, 2023</p>
             </div>
             <div id="location">
               <h2>Location</h2>
-              <p>Cruess Hall Maker Space</p>
+              <p>CRUESS Maker Space</p>
             </div>
             <div id="hours">
               <h2>Exhibition Hours</h2>
               <div id="ex-hours">
-                <p><span class="r-ibm">For fashion show ticket holders</span><br>9:00 AM - 4:00 PM</p>
-                <p><span class="r-ibm">Open for all</span><br>2:00 PM - 4:00 PM</p>
+                <p><span class="r-ibm">For fashion show ticket holders</span><br>10:00 AM - 4:00 PM</p>
+                <p><span class="r-ibm">Open for all</span><br>1:00 PM - 4:00 AM</p>
               </div>
             </div>
           </div>
+
+          <!-- <div id="ex-prism"></div> -->
         </div>
         
       </section>
-
-      <!-- see exhibition online -->
   
-      <div id="des-spotlights"></div>
+      <div id="des-spotlights">
+        <h2>Designer Spotlights Coming Soon</h2>
+      </div>
   
       <section id='fads'>
-        <h3>Join us during the 2022 UC Davis Picnic Day!</h3>
-
+        <h3>Join us during the 2023 UC Davis Picnic Day!</h3>
         <p class="r-ibm">FADS is a student-run organization that supports the talented fashion design students of UC Davis. We are so excited to be back in person this year with PRISM to showcase collections created by students of DES 179 “Signature Collection” class.</p>
         <div id="fs2021">
-          <a class="fs-button" href="../fashion-show/index.html">See FADS 2021 Show</a>
+          <a class="fs-button" href="../fashion-show/index.html" >See FADS 2021 Fashion Show</a>
         </div>
       </section>
   
@@ -201,62 +195,6 @@
     </div>
     
     <div class="breaker"></div>
-
-    
-    <section class="faq-container">
-
-      <h1>Fashion Show FAQs</h1>
-
-      <div class="faq-four">
-        <h3 class="faq-page">Why are there 2 links to buy tickets?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">There are two links for ticket purchasing, seperate for the morning and afternoon show. Make sure you visit and purchase from the right one for the show you would like to attend.</p>
-        </div>
-      </div>
-
-      <div class="faq-one">
-        <h3 class="faq-page">What do I bring to show I have a ticket?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">We will scan the mobile ticket you recieve through the email you purchased it with.</p>
-        </div>
-      </div>
-
-      <div class="faq-two">
-        <h3 class="faq-page">Where do I check-in for the show with tickets?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">There will be a check-in stand at enterance to the Cruess Hall Maker Space. If you ordered mutiple tickets at the same time, only one person from the group will have to show the tickets on their mobile device. If you hold tickets for more than one person, the whole party must be present at time of check-in.</p>
-        </div>
-      </div>
-
-      <div class="faq-three">
-        <h3 class="faq-page">May I transfer fashion show tickets?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">Yes, mobile tickets are sent through email. You may transfer your mobile tickets to another person via email.</p>
-        </div>
-      </div>
-
-      <div class="faq-three">
-        <h3 class="faq-page">How do complimentary tickets work?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">If you hold a complimentary ticket, you should have received your ticket through the person who reserved the ticket for you. You do not have to make any purchases. When you check in, you will be asked to show that ticket as well as the name of the person who reserved your ticket. There will be a section of seats blocked for anyone with a complimentary ticket. Complimentary tickets are only valid for one show, either morning or afternoon, not both.</p>
-        </div>
-      </div>
-
-      <div class="faq-three">
-        <h3 class="faq-page">Will there be a coat check?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">The fashion show will not have a coat check, however, you may place items under your seat during the show. FADS is not responsible for any lost or damaged items.</p>
-        </div>
-      </div>
-
-      <div class="faq-five">
-        <h3 class="faq-page">Is there parking for the fashion show?</h3>
-        <div class="faq-body">
-          <p class="r-ibm">Although we have 2 showtimes, the afternoon show is always the busier one. If you plan on driving to the event, plan ahead for parking as spaces may be limited in parking lots near Cruess Hall. <a style="color: var(--fs-mauve);" href="https://picnicday.ucdavis.edu/getting-around-page/"><u>Check picnic day parking guide here.</u></a></p>
-        </div>
-      </div>
-           
-    </section>
     
     <div class='footer'>
       <div class='title'>
