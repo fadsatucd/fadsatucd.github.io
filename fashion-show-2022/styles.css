@@ -15,7 +15,7 @@
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
+    font-size: 40px;
     color: var(--fs-mauve);
     text-align: center;
 }
@@ -24,20 +24,20 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: var(--fs-mauve);
+    color: var(--fs-dark);
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    color: var(--fs-mauve);
+    color: var(--fs-dark);
 }
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 20px;
     font-style: italic;
-    color: var(--fs-dustyGrey);
+    color: var(--fs-dark);
 }
 
 .r-ibm {
@@ -62,7 +62,7 @@ p {
 #fashion-show-banner {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(-70deg, var(--fs-pink) 0%, var(--fs-blue) 0%, var(--fs-purple) 0%);
+    background: rgb(235, 174, 112)
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +128,7 @@ video {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 216, 149);
     gap: 30px;
 }
 
@@ -148,7 +148,7 @@ video {
 } */
 
 #tickets-button {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 #tickets h1 {
@@ -215,14 +215,14 @@ video {
 #des-spotlights a {
     margin: auto;
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: 56px;
 }
 
 #fads {
     margin: 15% 0;
     min-height: 100%;
-    text-align: center;
+    text-align: left;
     padding: 0 55px;
 }
 
@@ -243,7 +243,7 @@ video {
 
 .fs-button:hover {
     border: 1px solid transparent;
-    background: linear-gradient(50deg, var(--fs-pink) 0%, var(--fs-purple) 100%);
+    background: rgb(255, 169, 83);
 }
 
 #trailer-btn {
@@ -347,7 +347,7 @@ video {
     }
 
     #banner img {
-        width: 80%;
+        width: 100%;
     }
 
     #fs-prices {
@@ -385,15 +385,15 @@ video {
 
     #main-content {
         margin: 0;
-        background: url("../media/fashion-show-2022/prism-left.png");
+        background: url;
         background-repeat: no-repeat;
         background-position: left 400px;
     }
 
     #exhibition {
-        margin: 0;
+        margin: 25px;
         padding-right: 15%;
-        background: url("../media/fashion-show-2022/ex-right.png");
+        background: url;
         background-repeat: no-repeat;
         background-position: right 150px;
         background-size: 450px 900px;
@@ -419,15 +419,15 @@ video {
     }
 
     #ex-info {
-        margin-right: 5%;
+        margin-left: 5%;
     }
 
     #location {
-        margin-right: 100px;
+        margin-left: 100px;
     }
     
     #hours {
-        margin-right: 200px;
+        margin-left: 200px;
     }
     
     #des-spotlights h2 {
