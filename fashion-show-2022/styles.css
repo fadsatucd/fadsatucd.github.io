@@ -63,7 +63,7 @@ p {
     width: 100%;
     min-height: 100vh;
     background: rgb(235, 174, 112)
-    display: flex;
+    display flex;
     flex-direction: column;
     align-items: center;
 }
@@ -197,7 +197,7 @@ video {
     padding: 20px 0;
     font-weight: 600;
     font-family: 'IBM Plex Sans', sans-serif;
-    background: linear-gradient(70deg,rgba(255,255,255), rgba(255,255,255), rgba(255,255,255));
+    background: #ffffff;
 }
 
 @keyframes flow {
@@ -214,7 +214,7 @@ video {
   
 #des-spotlights a {
     margin: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: 56px;
 }
@@ -233,7 +233,7 @@ video {
 
 .fs-button {
     width: fit-content;
-    border: 1px solid black;
+    border: 2px solid black;
     background: transparent;
     padding: 10px 20px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -242,7 +242,7 @@ video {
 }
 
 .fs-button:hover {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background: rgb(255, 169, 83);
 }
 
