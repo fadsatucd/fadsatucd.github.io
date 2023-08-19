@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 7px;
 }
 .navbar .social-button.pt-logo {
-  padding: 7px;
+  padding: 5px;
 }
 .navbar .social-button.fb-logo img {
   width: 30px;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 26px;
 }
 .navbar .social-button.pt-logo img {
-  width: 26px;
+  width: 30px;
 }
 .navbar .right-mobile {
   display: none;
