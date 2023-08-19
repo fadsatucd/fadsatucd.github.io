@@ -238,10 +238,16 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .social-button.ig-logo {
   padding: 7px;
 }
+.navbar .social-button.pt-logo {
+  padding: 7px;
+}
 .navbar .social-button.fb-logo img {
   width: 30px;
 }
 .navbar .social-button.ig-logo img {
+  width: 26px;
+}
+.navbar .social-button.pt-logo img {
   width: 26px;
 }
 .navbar .right-mobile {
