@@ -1,5 +1,8 @@
 @import "/base.css";
-
+body {
+  background-image: url('runway.jpeg');
+  background-color: #cccccc;
+}
 .home-banner {
   display: flex;
   flex-direction: row;
