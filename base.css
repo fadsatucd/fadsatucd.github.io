@@ -43,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('runway.jpeg');
+   background-color: #cccccc;
 }
 div {
   box-sizing: border-box;
