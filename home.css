@@ -22,7 +22,7 @@
   align-self: flex-start;
   width: calc(100vw - 2 * 60px);
 }
-.home-banner .corner {
+<!--.home-banner .corner {
   width: 100px;
   height: 100px;
 }
@@ -33,7 +33,7 @@
 .home-banner .top-right-corner {
   border-top: 2px solid var(--soft);
   border-right: 2px solid var(--soft);
-}
+}-->
 .home-banner .bottom-frame {
   display: flex;
   justify-content: space-between;
@@ -41,14 +41,14 @@
   align-self: flex-end;
   width: calc(100vw - 2 * 60px);
 }
-.home-banner .bottom-left-corner {
+<!--.home-banner .bottom-left-corner {
   border-left: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
 }
 .home-banner .bottom-right-corner {
   border-right: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
-}
+}-->
 .home-banner .inner {
   display: flex;
   flex-direction: column;
@@ -121,10 +121,10 @@
 }
 
 @media screen and (max-width: 800px) {
-  .home-banner .corner {
+ <!-- .home-banner .corner {
     width: 75px;
     height: 75px;
-  }
+  }-->
   .home-banner .inner .banner-text {
     width: 55vw;
   }
@@ -134,10 +134,10 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .home-banner .corner {
+  <!--.home-banner .corner {
     width: 50px;
     height: 50px;
-  }
+  }-->
 
   #fs {
     height: 600px;
