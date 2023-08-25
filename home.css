@@ -1,12 +1,18 @@
 @import "/base.css";
 
 .home-banner {
+  background-image: url("runway.jpeg"); 
+  background-color: #cccccc; 
+  height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   display: flex;
   flex-direction: row;
   width: 100vw;
   min-height: calc(100vh - 80px);
   padding: 60px;
-  background-color: var(--accent);
+  <!--background-color: var(--accent);-->
   text-align: center;
 }
 .home-banner .top-frame {
