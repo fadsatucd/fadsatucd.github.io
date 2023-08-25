@@ -63,7 +63,7 @@
 .home-banner .inner .banner-text {
   width: 45vw;
   margin: 60px auto 0;
-  padding: 30px 30px 50px;
+  padding: 30px 30px 100px;
   border: 2px solid var(--primary);
   background: var(--accent);
   text-align: center;
