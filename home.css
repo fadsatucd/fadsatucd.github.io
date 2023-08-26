@@ -36,7 +36,8 @@
 }-->
 .home-banner .bottom-frame {
   display: flex;
-  justify-content: space-between;
+  <!--justify-content: space-between;-->
+  padding-bottom: 100px;
   position: absolute;
   align-self: flex-end;
   width: calc(100vw - 2 * 60px);
