@@ -17,7 +17,7 @@
 }
 .home-banner .top-frame {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   position: absolute;
   align-self: flex-start;
   width: calc(100vw - 2 * 60px);
