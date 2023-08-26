@@ -38,7 +38,7 @@
   display: flex;
   <!--justify-content: space-between;-->
   padding-bottom: 100px;
-  position: absolute;
+ <!-- position: absolute;-->
   align-self: flex-end;
   width: calc(100vw - 2 * 60px);
 }
