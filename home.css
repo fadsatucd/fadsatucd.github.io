@@ -1,6 +1,4 @@
 @import "/base.css";
-
-.home-banner {
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -68,15 +66,9 @@ img {vertical-align: middle;}
 
 
 
+.home-banner {
 
-
-
-
-  
-
-
-  
- <!-- background-image: url("runway.jpeg");-->
+<!-- background-image: url("runway.jpeg");-->
   background-color: #cccccc; 
   height: 500px; 
   background-position: center; 
