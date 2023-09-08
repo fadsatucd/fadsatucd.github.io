@@ -41,7 +41,7 @@
   background-color: #717171;
 
 
-.home-banner {
+<!-- .home-banner {
 
  background-image: url("runway.jpeg");
   background-color: #cccccc; 
@@ -56,14 +56,14 @@
   padding: 60px;
   <!--background-color: var(--accent);-->
   text-align: center;
-}
-.home-banner .top-frame {
+} -->
+<!-- .home-banner .top-frame {
   display: flex;
   justify-content: center;
   position: absolute;
   align-self: flex-start;
   width: calc(100vw - 2 * 60px);
-}
+} -->
 <!--.home-banner .corner {
   width: 100px;
   height: 100px;
@@ -76,13 +76,13 @@
   border-top: 2px solid var(--soft);
   border-right: 2px solid var(--soft);
 }-->
-.home-banner .bottom-frame {
+<!-- .home-banner .bottom-frame {
   display: flex;
   justify-content: space-between;
   position: absolute;
   align-self: flex-end;
   width: calc(100vw - 2 * 60px);
-}
+} -->
 <!--.home-banner .bottom-left-corner {
   border-left: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
@@ -91,7 +91,7 @@
   border-right: 2px solid var(--soft);
   border-bottom: 2px solid var(--soft);
 }-->
-.home-banner .inner {
+<!-- .home-banner .inner {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -129,7 +129,7 @@
 .home-banner .inner .button-wrapper .button:hover {
   background-color: var(--primary);
   color: var(--accent);
-} 
+} -->
 
 #fs {
   display: flex;
