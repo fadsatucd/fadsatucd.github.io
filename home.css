@@ -66,7 +66,7 @@ img {vertical-align: middle;}
 
 
 
-<!-- .home-banner {
+.home-banner {
 
 <!-- background-image: url("runway.jpeg");-->
   background-color: #cccccc; 
@@ -137,7 +137,7 @@ img {vertical-align: middle;}
   color: var(--black);
 }
 .home-banner .inner .button-wrapper {
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin: -30px auto 0;
   background-color: var(--accent);
@@ -154,7 +154,7 @@ img {vertical-align: middle;}
 .home-banner .inner .button-wrapper .button:hover {
   background-color: var(--primary);
   color: var(--accent);
-} -->
+} 
 
 #fs {
   display: flex;
