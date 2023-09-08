@@ -137,7 +137,7 @@ img {vertical-align: middle;}
   color: var(--black);
 }
 .home-banner .inner .button-wrapper {
-  position: absolute;
+  position: relative;
   display: inline-block;
   margin: -30px auto 0;
   background-color: var(--accent);
