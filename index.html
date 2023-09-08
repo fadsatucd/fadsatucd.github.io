@@ -104,32 +104,17 @@
       </div>
     </div>
 
-    
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="runway.jpeg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="girl_purple_dress.jpeg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="meeting.png" style="width:100%">
-  </div>
+<div class="slider">
+  <img id="img-1" src="runway.jpeg" alt="Image 1"/>
+  <img id="img-2" src="girl_purple_dress.jpg" alt="Image 2"/>
+  <img id="img-3" src="meeting.png" alt="Image 3"/>
 </div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+<div class="navigation-button">
+  <span class="dot active" onclick="changeSlide(0)"></span>
+  <span class="dot" onclick="changeSlide(1)"></span>
+  <span class="dot" onclick="changeSlide(2)"></span>
 </div>
+  
 
 <script>
 let slideIndex = 0;
