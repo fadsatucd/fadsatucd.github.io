@@ -31,13 +31,13 @@
     
     function showSlides() {
     
-      let slides = document.getElementsByClassName("home-banner");
+      let slides = document.querySelector("home-banner");
      
       if (slideIndex == 0) {
-        slides[0].style.backgroundImage = "url('girl_purple_dress.jpeg')";
+        slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
         slideIndex = 1;
        } else {
-        slides[0].style.backgroundImage = "url('runway.jpeg')";
+        slides.style.backgroundImage = "url('runway.jpeg')";
         slideIndex = 0;
       }
       setTimeout(showSlides, 2000); // Change image every 2 seconds
