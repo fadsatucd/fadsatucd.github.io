@@ -21,10 +21,29 @@
 
       gtag('config', 'G-6HS474BKX0');
 
+      
+
 
     </script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+    
+      let slides = document.getElementsByClassName("home-banner");
+     
+      if (slideIndex == 0) {
+        slides.style.backgroundImage = url("girl_purple_dress.jpeg");
+        slideIndex = 1;
+       } else {
+        slides.style.backgroundImage = url("runway.jpeg");
+        slideIndex = 0;
+      }
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
 
-
+  </script>
     
   </head>
 
