@@ -1,5 +1,24 @@
 @import "/base.css";
 
+<script>
+
+function run(interval, frames) {
+    var int = 1;
+    
+    function func() {
+        document.body.id = "b"+int;
+        int++;
+        if(int === frames) { int = 1; }
+    }
+    
+    var swap = window.setInterval(func, interval);
+}
+
+run(1000, 4); //milliseconds, frames
+
+</script>
+
+
 .home-banner {
  #b1 { background-image: url("runway.jpeg"); }
 #b2 { background-image: url("girl_purple_dress.jpeg"); }
