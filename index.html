@@ -110,28 +110,7 @@
     </div>
 
     <div class='home-banner'>
-<div class="w3-content w3-section" style="max-width:2000px">
-  <img class="mySlides" src="runway.jpeg" style="width:100%">
-  <img class="mySlides" src="girl_purple_dress.jpeg" style="width:100%">
-  <img class="mySlides" src="meeting.png" style="width:100%">
-</div>
 
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 
       
       <div class='top-frame'>
@@ -197,7 +176,7 @@ function carousel() {
     </div>
 
     <script type='text/javascript' src='/base.js'></script>
-  <!-- <script>
+<script>
     let slideIndex = 0;
     showSlides();
     
@@ -215,7 +194,7 @@ function carousel() {
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
 
-  </script> -->
+  </script> 
 
 
 
