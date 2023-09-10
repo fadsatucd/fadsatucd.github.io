@@ -2,7 +2,7 @@
 
 
 .home-banner {
-
+.mySlides {display:none;}
 background-image: url("runway.jpeg"); 
 background-color: #cccccc; 
   height: 500px; 
