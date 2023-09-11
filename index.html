@@ -111,7 +111,25 @@
 
     <div class='home-banner'>
 
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+    
+      let slides = document.querySelector("home-banner");
+     
+      if (slideIndex == 0) {
+        slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
+        slideIndex = 1;
+       } else {
+        slides.style.backgroundImage = "url('runway.jpeg')";
+        slideIndex = 0;
+      }
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
 
+  </script> 
       
       <div class='top-frame'>
        <!-- <div class='corner top-left-corner'></div>
@@ -176,25 +194,7 @@
     </div>
 
     <script type='text/javascript' src='/base.js'></script>
-<script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-    
-      let slides = document.querySelector("home-banner");
-     
-      if (slideIndex == 0) {
-        slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
-        slideIndex = 1;
-       } else {
-        slides.style.backgroundImage = "url('runway.jpeg')";
-        slideIndex = 0;
-      }
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
 
-  </script> 
 
 
 
