@@ -1,19 +1,8 @@
 @import "/base.css";
 
-.mySlides {display:none;}
 .home-banner {
+.mySlides {display:none;}
 
-<div class="mySlides fade">
-  <img src="runway.jpeg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="girl_purple_dress.jpeg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="meeting.png" style="width:100%">
-</div>
 background-image: url("runway.jpeg"); 
 background-color: #cccccc; 
   height: 500px; 
