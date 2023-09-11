@@ -118,7 +118,7 @@
       </div>
       <div class='inner'>
         <div class='banner-logo'>
-          <img src='/media/logo-banner.svg'>
+          <img id="logobanner" src='/media/logo-banner.svg'>
         </div>
         <div class='banner-text'>
           <div class='content'>
@@ -192,7 +192,9 @@
         slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
         slideIndex = 2;
        } else if (slideIndex == 2) {
-        slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
+        slides.style.backgroundImage = "url('meeting.png')";
+        let bimg = document.getElementById("logobanner");
+        bimg.src = 
         slideIndex = 0;
        } 
       setTimeout(showSlides, 2000); // Change image every 2 seconds
