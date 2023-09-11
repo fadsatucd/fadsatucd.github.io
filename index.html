@@ -184,17 +184,18 @@
     function showSlides() {
     
       let slides = document.getElementById("home-banner");
-     
+      let bimg = document.getElementById("logobanner");
       if (slideIndex == 0) {
         slides.style.backgroundImage = "url('runway.jpeg')";
+        bimg.src = "/media/logo-banner.svg"; 
         slideIndex = 1;
        } else if (slideIndex == 1) {
         slides.style.backgroundImage = "url('girl_purple_dress.jpeg')";
+        bimg.src = "logo-white.png";
         slideIndex = 2;
        } else if (slideIndex == 2) {
         slides.style.backgroundImage = "url('meeting.png')";
-        let bimg = document.getElementById("logobanner");
-        bimg.src = 
+        bimg.src = "/media/logo-banner.svg"; 
         slideIndex = 0;
        } 
       setTimeout(showSlides, 2000); // Change image every 2 seconds
