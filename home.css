@@ -12,6 +12,7 @@ background-color: #cccccc;
   min-height: calc(100vh - 80px);
   padding: 60px;
   /* background-color: var(--accent);*/
+  transition: background 2s;
   text-align: center;
 }
 .home-banner .top-frame {
